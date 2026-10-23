@@ -1,0 +1,1824 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orações Subordinadas Substantivas e Adjetivas — Aula + Kit de Revisão</title>
+<meta name="description" content="Aula completa e kit de revisão pré-prova sobre orações subordinadas substantivas e adjetivas, construídos a partir da apostila de Gramática (Período composto), 2ª série.">
+<script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+<!-- Fontes da identidade visual. Se não carregarem (offline), a página usa as fontes do sistema e continua funcionando. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap">
+<style>
+:root{
+  --bg:#F6F0E4; --paper:#FFFCF6; --ink:#211C16; --ink2:#4B4339; --muted:#766C60;
+  --line:#E5DACA; --line2:#D2C4AE;
+  --aula:#8C3A1D; --aula-soft:#F4E3D5; --kit:#1E5E58; --kit-soft:#DCECE8;
+  --def:#2D4D7C; --def-soft:#E6EDF7;
+  --warn:#835600; --warn-soft:#FBEFD2;
+  --fix:#A11F1F; --fix-soft:#FBE4E1;
+  --plus:#5A3F87; --plus-soft:#EEE7F7;
+  --trap:#982C63; --trap-soft:#F9E3EE;
+  --ok:#2E6B3B; --ok-soft:#E1F0E4;
+  --hl-sub:#F8DD9C; --hl-adj:#BFE2D9; --hl-adv:#E2D5F3;
+  --accent:var(--aula); --accent-soft:var(--aula-soft);
+  --f-display:"Fraunces","Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --f-body:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --radius:12px; --measure:47rem; --top:56px;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#16130E; --paper:#1F1B15; --ink:#EFE7DA; --ink2:#D0C5B5; --muted:#A3978A;
+    --line:#3A3229; --line2:#4C4237;
+    --aula:#E8A07A; --aula-soft:#3A271D; --kit:#7FCBBE; --kit-soft:#173230;
+    --def:#A3BDEA; --def-soft:#1D2A3D; --warn:#E8C063; --warn-soft:#382D13;
+    --fix:#F29C95; --fix-soft:#3C1E1B; --plus:#C6ADF0; --plus-soft:#2B2240;
+    --trap:#EF9FC8; --trap-soft:#3A1D2D; --ok:#93D3A0; --ok-soft:#1C3222;
+    --hl-sub:#5B4614; --hl-adj:#1E4942; --hl-adv:#3A2D52;
+  }
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--top) + 18px);-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1.0625rem;line-height:1.72;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--def);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:12px;z-index:100;background:var(--paper);padding:.5rem .8rem;border-radius:8px;border:1px solid var(--line2)}
+::selection{background:var(--hl-sub)}
+
+/* ---------- Barra superior e progresso ---------- */
+.topbar{position:sticky;top:0;z-index:50;height:var(--top);display:flex;align-items:center;gap:.7rem;padding:0 1rem;background:var(--bg);border-bottom:1px solid var(--line)}
+@supports (backdrop-filter:blur(8px)){.topbar{background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:saturate(1.2) blur(8px)}}
+.progress{position:absolute;left:0;bottom:-1px;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--aula),var(--kit))}
+.brand{font-family:var(--f-display);font-weight:600;font-size:1rem;color:var(--ink);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.top-links{margin-left:auto;display:flex;gap:.4rem;flex-shrink:0}
+.chip-link{font-family:var(--f-mono);font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:.38rem .65rem;border-radius:999px;border:1px solid var(--line2);background:var(--paper);white-space:nowrap}
+.chip-link.aula{color:var(--aula)} .chip-link.kit{color:var(--kit)}
+.toc-btn{display:none;align-items:center;gap:.4rem;font:600 .8rem var(--f-body);padding:.42rem .7rem;border-radius:8px;border:1px solid var(--line2);background:var(--paper);color:var(--ink);cursor:pointer;flex-shrink:0}
+.toc-btn svg{width:16px;height:16px}
+
+/* ---------- Layout ---------- */
+.layout{display:grid;grid-template-columns:17.5rem minmax(0,1fr);gap:3rem;max-width:77rem;margin:0 auto;padding:0 1.25rem}
+.sidebar{position:sticky;top:calc(var(--top) + .5rem);align-self:start;max-height:calc(100vh - var(--top) - 1rem);overflow:auto;padding:1.2rem .2rem 2rem 0;font-size:.89rem;scrollbar-width:thin}
+main{min-width:0;max-width:var(--measure);padding-bottom:6rem}
+.scrim{display:none}
+@media (max-width:1000px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:0;padding:0 1rem}
+  main{margin:0 auto;width:100%}
+  .sidebar{position:static;max-height:none;overflow:visible;padding:1rem 0;border-bottom:1px solid var(--line)}
+  .js .toc-btn{display:inline-flex}
+  .js .sidebar{position:fixed;top:var(--top);left:0;bottom:0;width:min(88vw,22rem);background:var(--paper);border-right:1px solid var(--line);border-bottom:0;overflow:auto;padding:1rem 1.1rem 3rem;transform:translateX(-105%);transition:transform .25s ease;z-index:60;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+  .js .sidebar.open{transform:none}
+  .js .scrim.show{display:block;position:fixed;inset:var(--top) 0 0 0;background:rgba(0,0,0,.35);z-index:55}
+}
+@media (max-width:560px){.brand{font-size:.9rem}.chip-link{padding:.34rem .5rem;font-size:.66rem}}
+
+/* ---------- Sumário ---------- */
+.toc .toc-title{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:1.1rem 0 .45rem;display:flex;align-items:center;gap:.45rem}
+.toc .toc-title::before{content:"";width:.55rem;height:.55rem;border-radius:2px;background:var(--aula)}
+.toc .toc-title.kit::before{background:var(--kit)}
+.toc ol{list-style:none;margin:0;padding:0}
+.toc li{margin:0}
+.toc a{display:block;padding:.26rem .6rem;border-left:2px solid var(--line);color:var(--ink2);text-decoration:none;line-height:1.38}
+.toc a:hover{color:var(--ink);border-left-color:var(--line2)}
+.toc ol ol a{padding-left:1.35rem;font-size:.84rem}
+.toc a.active{color:var(--aula);border-left-color:var(--aula);background:var(--aula-soft);font-weight:600}
+.toc .kit-list a.active{color:var(--kit);border-left-color:var(--kit);background:var(--kit-soft)}
+.toc .n{font-family:var(--f-mono);font-size:.74em;color:var(--muted);margin-right:.35rem}
+
+/* ---------- Tipografia ---------- */
+h1,h2,h3{font-family:var(--f-display);line-height:1.18;letter-spacing:-.015em;color:var(--ink);font-optical-sizing:auto}
+h1{font-size:clamp(2.05rem,4.8vw,3.15rem);font-weight:640;margin:.35rem 0 1rem}
+h2{font-size:clamp(1.55rem,3vw,2.05rem);font-weight:610;margin:3.6rem 0 1rem}
+h3{font-size:1.32rem;font-weight:600;margin:2.6rem 0 .6rem}
+h4{font-family:var(--f-body);font-size:1.02rem;font-weight:700;margin:1.6rem 0 .35rem}
+.secnum{font-family:var(--f-mono);font-size:.62em;font-weight:600;color:var(--accent);margin-right:.55rem;vertical-align:.18em;letter-spacing:.04em}
+p{margin:.75rem 0}
+ul,ol{padding-left:1.3rem}
+li{margin:.32rem 0}
+strong,b{font-weight:700}
+small{font-size:.86em}
+code,.mono{font-family:var(--f-mono);font-size:.86em}
+hr{border:0;border-top:1px solid var(--line);margin:2.5rem 0}
+.muted{color:var(--muted)}
+.lead-in{font-size:1.08rem;color:var(--ink2)}
+mark.hl{background:var(--hl-sub);color:inherit;padding:0 .14em;border-radius:3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+mark.hl-a{background:var(--hl-adj);color:inherit;padding:0 .14em;border-radius:3px}
+mark.hl-v{background:var(--hl-adv);color:inherit;padding:0 .14em;border-radius:3px}
+.term{border-bottom:2px dashed var(--accent)}
+.k{font-weight:700;color:var(--accent)}
+
+/* ---------- Abertura ---------- */
+.hero{padding:2.6rem 0 1rem}
+.kicker{font-family:var(--f-mono);font-size:.76rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--aula);margin:0}
+.lede{font-size:1.2rem;line-height:1.6;color:var(--ink2);max-width:41rem;margin:.4rem 0 1rem}
+.meta{list-style:none;padding:0;margin:1rem 0 0;font-size:.9rem;color:var(--muted)}
+.meta li{margin:.15rem 0}
+.doors{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.7rem 0 1.4rem}
+.door{display:block;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--aula);border-radius:var(--radius);padding:1.05rem 1.2rem}
+.door.kit{border-top-color:var(--kit)}
+.door small{display:block;font-family:var(--f-mono);font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--aula)}
+.door.kit small{color:var(--kit)}
+.door b{display:block;font-family:var(--f-display);font-weight:600;font-size:1.25rem;margin:.25rem 0 .2rem}
+.door span{display:block;color:var(--ink2);font-size:.95rem;line-height:1.5}
+.door:hover{border-color:var(--line2)}
+@media (max-width:640px){.doors{grid-template-columns:1fr}}
+.legend{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;font-size:.82rem;color:var(--muted);margin:.4rem 0 0}
+
+/* ---------- Etiquetas e caixas ---------- */
+.tag{display:inline-block;max-width:100%;font-family:var(--f-mono);font-size:.66rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.16rem .5rem;border-radius:6px;border:1px solid currentColor;line-height:1.5;white-space:normal;overflow-wrap:anywhere}
+.legend .tag{white-space:nowrap}
+.grid2>*,.ess>*,.routes>*,.doors>*,.vids>*,.prio>*,.flow>*,.expand>*,.svc>*{min-width:0}
+main p,main li,main td,main .model{overflow-wrap:break-word}
+.tag.src{color:var(--ink2)} .tag.def{color:var(--def)} .tag.fix{color:var(--fix)} .tag.warn{color:var(--warn)}
+.tag.plus{color:var(--plus)} .tag.trap{color:var(--trap)} .tag.tip{color:var(--ok)} .tag.ex{color:var(--muted)}
+.callout{margin:1.25rem 0;padding:.85rem 1.1rem;border-radius:10px;background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--line2);break-inside:avoid}
+.callout>.tag:first-child{margin-bottom:.15rem}
+.callout>p:first-of-type{margin-top:.35rem}
+.callout>:last-child{margin-bottom:0}
+.callout ul,.callout ol{margin:.4rem 0}
+.callout.def{background:var(--def-soft);border-left-color:var(--def);border-color:transparent;border-left-color:var(--def)}
+.callout.fix{background:var(--fix-soft);border-color:transparent;border-left-color:var(--fix)}
+.callout.warn{background:var(--warn-soft);border-color:transparent;border-left-color:var(--warn)}
+.callout.plus{background:var(--plus-soft);border-color:transparent;border-left-color:var(--plus)}
+.callout.trap{background:var(--trap-soft);border-color:transparent;border-left-color:var(--trap)}
+.callout.tip{background:var(--ok-soft);border-color:transparent;border-left-color:var(--ok)}
+.callout.src{border-left-color:var(--ink2)}
+.callout .src-note{font-size:.86rem;color:var(--muted)}
+
+/* ---------- Análise de frases (segmentos) ---------- */
+.an{display:flex;flex-wrap:wrap;align-items:flex-start;gap:.55rem .3rem;margin:1rem 0;padding:.95rem 1.05rem;background:var(--paper);border:1px solid var(--line);border-radius:10px;font-size:1.04rem;line-height:1.55}
+.seg{display:inline-flex;flex-direction:column;align-items:flex-start;max-width:100%}
+.seg .t{padding:.06rem .3rem;border-bottom:2px solid var(--line2);border-radius:4px 4px 0 0}
+.seg .l{font-family:var(--f-mono);font-size:.64rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-top:.28rem;padding-left:.3rem;line-height:1.3}
+.seg.p .t{border-bottom-color:var(--ink2)}
+.seg.s .t{background:var(--hl-sub);border-bottom-color:var(--warn)}
+.seg.a .t{background:var(--hl-adj);border-bottom-color:var(--kit)}
+.seg.v .t{background:var(--hl-adv);border-bottom-color:var(--plus)}
+.seg.x .t{border-bottom-style:dashed}
+.an .note{flex-basis:100%;font-size:.86rem;color:var(--ink2);margin:.2rem 0 0}
+
+/* S / V / C */
+.svc{display:grid;grid-template-columns:1.25fr .55fr 1.25fr;gap:.45rem;margin:1rem 0}
+.svc>div{background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:.55rem .75rem;font-size:.95rem;line-height:1.45}
+.svc>div b{display:block;font-family:var(--f-mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:.15rem}
+.svc>div.on{background:var(--hl-sub);border-color:var(--warn)}
+.svc-cap{font-size:.86rem;color:var(--muted);margin-top:-.5rem}
+@media (max-width:520px){.svc{grid-template-columns:1fr}}
+
+/* Expansão termo → oração */
+.expand{display:grid;gap:.6rem;margin:1.1rem 0}
+.expand .row{display:grid;grid-template-columns:1fr auto 1fr;gap:.4rem .8rem;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:.75rem .95rem;font-size:.98rem;line-height:1.5}
+.expand .arrow{font-family:var(--f-mono);font-weight:600;color:var(--accent)}
+.expand .fn{grid-column:1/-1;font-family:var(--f-mono);font-size:.68rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:640px){.expand .row{grid-template-columns:1fr}.expand .arrow{transform:rotate(90deg);justify-self:start;margin-left:.4rem}}
+
+/* ---------- Tabelas ---------- */
+.tbl{overflow-x:auto;margin:1.2rem 0;border:1px solid var(--line);border-radius:10px;background:var(--paper);-webkit-overflow-scrolling:touch}
+.tbl table{border-collapse:collapse;width:100%;min-width:36rem;font-size:.93rem;line-height:1.5}
+.tbl.narrow table{min-width:28rem}
+.tbl th,.tbl td{padding:.62rem .78rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.tbl thead th{font-family:var(--f-mono);font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--bg)}
+.tbl tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--line) 20%,transparent)}
+.tbl tbody tr:last-child td{border-bottom:0}
+.tbl td.it{font-family:var(--f-mono);font-weight:600;color:var(--accent);white-space:nowrap}
+.tbl td.cl{font-weight:700;white-space:nowrap}
+.tbl td.cl small{display:block;font-weight:500;white-space:normal;color:var(--muted)}
+.tbl-cap{font-size:.84rem;color:var(--muted);margin:-.6rem 0 1rem}
+.scroll-hint{display:none;font-family:var(--f-mono);font-size:.68rem;color:var(--muted);margin:.2rem 0 -.8rem}
+@media (max-width:640px){.scroll-hint{display:block}}
+
+/* Modo treino */
+.toolbar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1rem 0 .4rem}
+.btn{font:600 .85rem/1.2 var(--f-body);padding:.6rem .9rem;border-radius:8px;border:1px solid var(--line2);background:var(--paper);color:var(--ink);cursor:pointer}
+.btn:hover{border-color:var(--accent)}
+.btn[aria-pressed="true"]{background:var(--accent);color:var(--paper);border-color:var(--accent)}
+.no-js .js-only{display:none!important}
+.treino .ans{position:relative;cursor:pointer}
+.treino tr:not(.show) .ans>span{display:none}
+.treino tr:not(.show) .ans:not(:last-child)::after{content:"toque para ver";position:absolute;left:.78rem;top:.62rem;font-family:var(--f-mono);font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.treino tr:not(.show) mark.hl{background:transparent;padding:0}
+.treino tbody tr{cursor:pointer}
+.counts{display:flex;flex-wrap:wrap;gap:.4rem;margin:.8rem 0}
+.counts span{font-size:.8rem;padding:.25rem .6rem;border-radius:999px;background:var(--paper);border:1px solid var(--line)}
+.counts b{font-family:var(--f-mono)}
+
+@media (max-width:640px){
+  #tabela-frases table{min-width:0}
+  #tabela-frases thead{display:none}
+  #tabela-frases tbody tr{display:grid;grid-template-columns:2.3rem minmax(0,1fr);gap:.2rem .55rem;padding:.75rem .8rem;border-bottom:1px solid var(--line)}
+  #tabela-frases tbody tr:last-child{border-bottom:0}
+  #tabela-frases tbody tr:nth-child(even){background:color-mix(in srgb,var(--line) 20%,transparent)}
+  #tabela-frases tbody tr td{display:block;border:0;padding:0;background:none}
+  #tabela-frases td.it{grid-row:1 / span 3}
+  #tabela-frases td.cl{white-space:normal;margin-top:.15rem}
+  #tabela-frases td.ans:last-child{color:var(--ink2);font-size:.9rem}
+  #tabela-frases.treino tr:not(.show) .ans::after{left:0;top:0}
+  #tabela-frases.treino tr:not(.show) td.ans:not(:last-child){min-height:1.3rem}
+  #tabela-frases.treino tr:not(.show) td.ans:last-child{display:none}
+}
+@media (max-width:640px){
+  .tbl.stack table{min-width:0}
+  .tbl.stack thead{display:none}
+  .tbl.stack tbody tr{display:block;padding:.75rem .85rem;border-bottom:1px solid var(--line)}
+  .tbl.stack tbody tr:last-child{border-bottom:0}
+  .tbl.stack tbody tr:nth-child(even){background:color-mix(in srgb,var(--line) 20%,transparent)}
+  .tbl.stack tbody td{display:block;border:0;padding:.08rem 0;background:none!important;white-space:normal}
+  .tbl.stack td[data-l]::before{content:attr(data-l);display:block;font-family:var(--f-mono);font-size:.62rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:.4rem}
+}
+/* ---------- Passos, fluxo, árvore ---------- */
+.steps{counter-reset:s;list-style:none;padding:0;margin:1rem 0}
+.steps>li{counter-increment:s;position:relative;padding:.12rem 0 .65rem 2.55rem;margin:0}
+.steps>li::before{content:counter(s);position:absolute;left:0;top:.15rem;width:1.75rem;height:1.75rem;border-radius:50%;display:grid;place-items:center;font:600 .78rem var(--f-mono);background:var(--accent);color:var(--paper)}
+.flow{display:grid;gap:.5rem;margin:1.2rem 0}
+.flow .q{background:var(--paper);border:1px solid var(--line2);border-radius:10px;padding:.8rem 1rem}
+.flow .qn{display:block;font-family:var(--f-mono);font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:.15rem}
+.flow .yes{margin-top:.55rem;padding:.55rem .75rem;border-radius:8px;background:var(--ok-soft);font-size:.95rem}
+.flow .no{font-family:var(--f-mono);font-size:.72rem;color:var(--muted);text-align:center;letter-spacing:.06em}
+.flow .branches{display:grid;grid-template-columns:repeat(auto-fit,minmax(13.5rem,1fr));gap:.4rem;margin-top:.55rem}
+.flow .branches div{border:1px dashed var(--line2);border-radius:8px;padding:.45rem .65rem;font-size:.9rem;line-height:1.45;background:var(--bg)}
+.tree{list-style:none;margin:1.1rem 0;padding:1rem 1.1rem;background:var(--paper);border:1px solid var(--line);border-radius:10px;font-size:.95rem}
+.tree ul{list-style:none;margin:.2rem 0 .2rem .45rem;padding-left:1rem}
+.tree li{position:relative;margin:.28rem 0;padding-left:.9rem}
+.tree ul>li::before{content:"";position:absolute;left:-.1rem;top:-.3rem;bottom:-.3rem;border-left:1px solid var(--line2)}
+.tree ul>li::after{content:"";position:absolute;left:-.1rem;top:.85em;width:.75rem;border-top:1px solid var(--line2)}
+.tree ul>li:last-child::before{bottom:auto;height:1.15em}
+.tree>li{padding-left:0}
+.node{display:inline-block;padding:.08rem .45rem;border-radius:6px;font-weight:700}
+.node.n-s{background:var(--hl-sub)} .node.n-a{background:var(--hl-adj)} .node.n-v{background:var(--hl-adv)} .node.n-p{background:var(--line)}
+
+/* ---------- Grades e cartões ---------- */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:1rem 0}
+@media (max-width:700px){.grid2{grid-template-columns:1fr}}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:.95rem 1.05rem}
+.card h4{margin:.1rem 0 .35rem}
+.card>:last-child{margin-bottom:0}
+.card .lab{font-family:var(--f-mono);font-size:.66rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.card.r{border-top:4px solid var(--warn)} .card.e{border-top:4px solid var(--kit)}
+
+/* ---------- Exercícios ---------- */
+.ex{margin:1.7rem 0;border:1px solid var(--line);border-radius:12px;background:var(--paper);overflow:hidden;scroll-margin-top:calc(var(--top) + 18px)}
+.ex-head{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .8rem;padding:.75rem 1.1rem;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--line) 28%,var(--paper))}
+.ex-head .n{font-family:var(--f-display);font-size:1.3rem;font-weight:650;line-height:1}
+.ex-head .banca{font-family:var(--f-mono);font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.ex-head .pill{margin-left:auto}
+.ex-body{padding:.3rem 1.1rem 1.05rem}
+.ex-body h4{font-family:var(--f-mono);font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:1.1rem 0 .25rem}
+.pill{display:inline-flex;align-items:center;gap:.3rem;font-family:var(--f-mono);font-size:.68rem;font-weight:600;padding:.22rem .6rem;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.pill.ok{color:var(--ok);background:var(--ok-soft)} .pill.no{color:var(--fix);background:var(--fix-soft)} .pill.blank{color:var(--muted)}
+.alts{list-style:none;padding:0;margin:.4rem 0}
+.alts li{padding:.42rem .65rem;border-radius:7px;margin:.2rem 0;line-height:1.5}
+.alts li.right{background:var(--ok-soft)}
+.alts .lt{font-family:var(--f-mono);font-weight:600;margin-right:.35rem}
+.alts .why{display:block;font-size:.9rem;color:var(--ink2)}
+.gab{display:inline-block;font-weight:700;padding:.1rem .5rem;border-radius:6px;background:var(--ok-soft);color:var(--ok)}
+.model{background:var(--bg);border:1px dashed var(--line2);border-radius:9px;padding:.7rem .9rem;margin:.6rem 0;font-size:.98rem}
+
+/* ---------- Vídeos ---------- */
+.vids{display:grid;gap:.9rem;margin:1rem 0}
+.vid{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem}
+.vid .vt{font-family:var(--f-display);font-size:1.08rem;font-weight:600;margin:0 0 .2rem;line-height:1.35}
+.vid .vm{font-family:var(--f-mono);font-size:.72rem;color:var(--muted);letter-spacing:.03em}
+.vid p{margin:.45rem 0;font-size:.97rem}
+.vid a.watch{display:inline-flex;align-items:center;gap:.45rem;margin-top:.4rem;padding:.55rem .85rem;border-radius:8px;background:var(--accent);color:var(--paper);text-decoration:none;font-weight:600;font-size:.9rem}
+.vid a.watch:hover{filter:brightness(1.08)}
+.seq{border-left:3px solid var(--accent);padding-left:.9rem;margin:.4rem 0}
+.seq .part{font-family:var(--f-mono);font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+
+/* ---------- Áreas ---------- */
+.area{margin:3.4rem 0 0;padding:1.5rem 1.4rem 1.3rem;border-radius:var(--radius);background:var(--aula-soft);border:1px solid color-mix(in srgb,var(--aula) 22%,transparent)}
+.area .area-tag{font-family:var(--f-mono);font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--aula);margin:0}
+.area h2{margin:.25rem 0 .4rem}
+.area p{margin:.3rem 0;color:var(--ink2)}
+.kit-zone{--accent:var(--kit);--accent-soft:var(--kit-soft)}
+.kit-zone .area{background:var(--kit-soft);border-color:color-mix(in srgb,var(--kit) 25%,transparent)}
+.kit-zone .area .area-tag{color:var(--kit)}
+
+/* ---------- Kit ---------- */
+.routes{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin:1rem 0}
+@media (max-width:860px){.routes{grid-template-columns:1fr}}
+.route{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--kit);border-radius:12px;padding:.95rem 1rem}
+.route .dur{font-family:var(--f-mono);font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--kit)}
+.route h3{margin:.25rem 0 .4rem;font-size:1.15rem}
+.route ol{padding-left:1.15rem;font-size:.92rem;margin:.3rem 0}
+.route li{margin:.3rem 0}
+.score{display:flex;flex-wrap:wrap;gap:1rem 1.6rem;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem;margin:1rem 0}
+.score .big{font-family:var(--f-display);font-size:2.8rem;font-weight:650;line-height:1;color:var(--kit)}
+.score .big small{font-size:.4em;color:var(--muted)}
+.qgrid{display:grid;grid-template-columns:repeat(7,minmax(2.6rem,1fr));gap:.35rem;flex:1;min-width:16rem}
+.qcell{border-radius:7px;padding:.3rem .2rem;text-align:center;font-family:var(--f-mono);font-size:.74rem;font-weight:600;border:1px solid var(--line)}
+.qcell span{display:block;font-size:.9rem}
+.qcell.ok{background:var(--ok-soft);color:var(--ok)} .qcell.no{background:var(--fix-soft);color:var(--fix)} .qcell.half{background:var(--warn-soft);color:var(--warn)} .qcell.blank{color:var(--muted)}
+.prio{display:grid;gap:.6rem;margin:1rem 0}
+.prio>div{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--kit);border-radius:10px;padding:.75rem 1rem}
+.prio>div.p2{border-left-color:var(--warn)} .prio>div.p3{border-left-color:var(--plus)}
+.prio b.lvl{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}
+.ess{display:grid;gap:.8rem;margin:1rem 0}
+.q-item{margin:1rem 0;padding:.8rem 1rem;background:var(--paper);border:1px solid var(--line);border-radius:10px}
+.q-item>p.q{margin:0;font-weight:600}
+.q-item>p.q .qn{font-family:var(--f-mono);color:var(--accent);margin-right:.4rem}
+.q-item ol.opts{list-style:none;padding:0;margin:.4rem 0}
+.q-item ol.opts li{margin:.18rem 0}
+.space{height:2.2rem;border-bottom:1px dashed var(--line2);margin:.2rem 0 .6rem}
+details.qa{margin:.55rem 0 0;border:1px solid var(--line);border-radius:9px;background:var(--bg)}
+details.qa>summary{cursor:pointer;padding:.5rem .8rem;list-style:none;font-family:var(--f-mono);font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);display:flex;gap:.5rem;align-items:center}
+details.qa>summary::-webkit-details-marker{display:none}
+details.qa>summary::before{content:"+";font-size:1rem;line-height:1}
+details.qa[open]>summary::before{content:"−"}
+details.qa .ans-body{padding:.1rem .95rem .8rem;font-size:.97rem;color:var(--ink2)}
+details.qa .ans-body>:first-child{margin-top:.2rem}
+details.qa .ans-body>:last-child{margin-bottom:0}
+
+/* ---------- Rodapé e botão topo ---------- */
+.to-top{position:fixed;right:1rem;bottom:1rem;z-index:40;font-family:var(--f-mono);font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line2);border-radius:999px;padding:.55rem .85rem;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+footer.fontes{margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--line);font-size:.88rem;color:var(--ink2)}
+footer.fontes h2{font-size:1.2rem;margin:0 0 .6rem}
+footer.fontes li{margin:.4rem 0}
+
+/* ---------- Impressão ---------- */
+@media print{
+  :root{--bg:#fff;--paper:#fff;--ink:#000;--ink2:#222;--muted:#555;--line:#ccc;--line2:#aaa;--aula:#7a2f15;--kit:#164a45;--accent:#7a2f15;
+    --hl-sub:#f3e2b3;--hl-adj:#d3ebe5;--hl-adv:#e8def5;--ok-soft:#eef6ef;--fix-soft:#fbecea;--warn-soft:#fbf3df;--plus-soft:#f2edf9;--trap-soft:#faeef4;--def-soft:#eef2f9;--aula-soft:#f8eee6;--kit-soft:#e7f2ef}
+  .kit-zone{--accent:#164a45}
+  body{font-size:10.5pt;line-height:1.5;background:#fff}
+  .topbar,.sidebar,.scrim,.to-top,.toolbar,.js-only,.scroll-hint{display:none!important}
+  .layout{display:block;max-width:none;padding:0}
+  main{max-width:none;padding:0}
+  a{color:#000}
+  .vid a.watch{background:none;color:#000;padding:0;border:0}
+  a[href^="http"]::after{content:" (" attr(href) ")";font-size:.78em;word-break:break-all;color:#444}
+  .callout,.an,.route,.vid,.q-item,.card,.svc,.expand .row,.flow .q{break-inside:avoid}
+  .ex{break-inside:auto}
+  h2,h3,h4{break-after:avoid}
+  .kit-zone>.area{break-before:page}
+  .tbl{overflow:visible;border:0}
+  .tbl table{min-width:0}
+  .tbl tr{break-inside:avoid}
+  .treino tr:not(.show) .ans>span{display:inline!important}
+  .treino tr:not(.show) .ans::after{content:none!important}
+  .doors{display:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topbar">
+  <button class="toc-btn js-only" type="button" aria-controls="sumario" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+    Sumário
+  </button>
+  <a class="brand" href="#topo">Orações subordinadas</a>
+  <nav class="top-links" aria-label="Áreas">
+    <a class="chip-link aula" href="#aula">Aula</a>
+    <a class="chip-link kit" href="#kit">Kit pré-prova</a>
+  </nav>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+<div class="scrim" aria-hidden="true"></div>
+
+<div class="layout">
+<aside class="sidebar" id="sumario" aria-label="Sumário">
+  <nav class="toc">
+    <p class="toc-title">Área 1 · Aula completa</p>
+    <ol>
+      <li><a href="#visao-geral"><span class="n">1</span>Visão geral</a></li>
+      <li><a href="#pre-requisitos"><span class="n">2</span>Pré-requisitos</a></li>
+      <li><a href="#explicacao"><span class="n">3</span>Explicação completa</a>
+        <ol>
+          <li><a href="#conceito"><span class="n">3.1</span>O que é oração subordinada</a></li>
+          <li><a href="#tres-tipos"><span class="n">3.2</span>Os três tipos</a></li>
+          <li><a href="#reconhecer"><span class="n">3.3</span>Como reconhecer a substantiva</a></li>
+          <li><a href="#subjetiva"><span class="n">3.4</span>Subjetiva</a></li>
+          <li><a href="#predicativa"><span class="n">3.5</span>Predicativa</a></li>
+          <li><a href="#objetiva-direta"><span class="n">3.6</span>Objetiva direta</a></li>
+          <li><a href="#objetiva-indireta"><span class="n">3.7</span>Objetiva indireta</a></li>
+          <li><a href="#completiva-nominal"><span class="n">3.8</span>Completiva nominal</a></li>
+          <li><a href="#apositiva"><span class="n">3.9</span>Apositiva</a></li>
+          <li><a href="#casos-especiais"><span class="n">3.10</span>Casos especiais</a></li>
+          <li><a href="#frases"><span class="n">3.11</span>As 42 frases a)–pp)</a></li>
+          <li><a href="#adjetivas"><span class="n">3.12</span>Adjetivas e relativos</a></li>
+          <li><a href="#restritiva-explicativa"><span class="n">3.13</span>Restritiva × explicativa</a></li>
+          <li><a href="#que"><span class="n">3.14</span>O “que” decisivo</a></li>
+          <li><a href="#adverbiais"><span class="n">3.15</span>Adverbiais: o necessário</a></li>
+          <li><a href="#exercicios"><span class="n">3.16</span>Exercícios 01–14</a></li>
+        </ol>
+      </li>
+      <li><a href="#exemplos"><span class="n">4</span>Exemplos e analogias</a></li>
+      <li><a href="#esquemas"><span class="n">5</span>Esquemas</a></li>
+      <li><a href="#pegadinhas"><span class="n">6</span>Erros e pegadinhas</a></li>
+      <li><a href="#vestibulares"><span class="n">7</span>Vestibulares</a></li>
+      <li><a href="#videos"><span class="n">8</span>Vídeos verificados</a></li>
+      <li><a href="#revisao-final"><span class="n">9</span>Revisão final</a></li>
+    </ol>
+    <p class="toc-title kit">Área 2 · Kit pré-prova</p>
+    <ol class="kit-list">
+      <li><a href="#kit-rotas"><span class="n">K1</span>Rotas por tempo</a></li>
+      <li><a href="#kit-diagnostico"><span class="n">K2</span>Diagnóstico da sua folha</a></li>
+      <li><a href="#kit-essenciais"><span class="n">K3</span>Essenciais</a></li>
+      <li><a href="#kit-roteiros"><span class="n">K4</span>Reconhecer e responder</a></li>
+      <li><a href="#kit-comparacoes"><span class="n">K5</span>Comparações</a></li>
+      <li><a href="#kit-erros"><span class="n">K6</span>Erros a evitar</a></li>
+      <li><a href="#kit-teste"><span class="n">K7</span>Teste de recuperação</a></li>
+      <li><a href="#kit-folha"><span class="n">K8</span>Completar a folha</a></li>
+    </ol>
+  </nav>
+</aside>
+
+<main id="conteudo">
+<header class="hero" id="topo">
+  <p class="kicker">Gramática · 2ª série · Período composto</p>
+  <h1>Orações subordinadas substantivas e adjetivas</h1>
+  <p class="lede">Da noção de oração às pegadinhas de vírgula: uma aula completa construída a partir da sua apostila e um kit de revisão para quando o tempo estiver curto.</p>
+  <ul class="meta">
+    <li><b>Material-base:</b> apostila “Orações subordinadas” — Prof. Ivan Gomes de Oliveira (anotado na folha: “P. 11 a 17, Volume 4”).</li>
+    <li><b>8 fotos:</b> teoria das substantivas e das adjetivas, frases a)–pp), Exercícios de Fixação 01–14 e gabarito, com as suas anotações.</li>
+  </ul>
+  <div class="doors">
+    <a class="door aula" href="#aula"><small>Área 1</small><b>Aula completa</b><span>Para estudar com tempo: dos fundamentos às questões de Fuvest, Unesp, ITA e Insper que estão na apostila.</span></a>
+    <a class="door kit" href="#kit"><small>Área 2</small><b>Kit de revisão pré-prova</b><span>Para a véspera: rotas de 15, 30 e 60 minutos, diagnóstico das suas respostas e testes com gabarito escondido.</span></a>
+  </div>
+  <p class="legend">Marcações usadas:
+    <span class="tag src">Na apostila</span>
+    <span class="tag fix">Correção necessária</span>
+    <span class="tag warn">Atenção à interpretação</span>
+    <span class="tag plus">Complemento para melhor compreensão</span>
+    <span class="tag trap">Pegadinha</span>
+    <span class="tag ex">Exemplo criado</span>
+  </p>
+</header>
+
+<div class="area" id="aula">
+  <p class="area-tag">Área 1</p>
+  <h2>Aula completa</h2>
+  <p>Do zero às questões de vestibular. Cada parte da apostila aparece no ponto em que ajuda a entender o assunto, com as suas anotações conferidas e, quando necessário, corrigidas.</p>
+</div>
+
+<section id="visao-geral">
+<h2><span class="secnum">01</span>Visão geral: o período que cresce</h2>
+<p>No período simples, cada função — sujeito, objeto, complemento, predicativo, aposto — é ocupada por uma palavra ou expressão. No período composto por subordinação, uma dessas funções passa a ser ocupada por <b>uma oração inteira</b>, com verbo próprio. A apostila resume isso no quadro de conceito: oração é a <b>expansão de um termo</b>.</p>
+<div class="expand" role="list" aria-label="Termos que se expandem em orações">
+  <div class="row" role="listitem"><span>É importante <span class="term">o estudo de todos</span>.</span><span class="arrow" aria-hidden="true">→</span><span>É importante <mark class="hl">que todos estudem</mark>.</span><span class="fn">sujeito → oração substantiva (subjetiva)</span></div>
+  <div class="row" role="listitem"><span>Todo homem <span class="term">mentiroso</span> é indigno de confiança.</span><span class="arrow" aria-hidden="true">→</span><span>Todo homem <mark class="hl-a">que mente</mark> é indigno de confiança.</span><span class="fn">adjetivo (adjunto adnominal) → oração adjetiva</span></div>
+  <div class="row" role="listitem"><span>Saí cedo <span class="term">por causa da chuva</span>.</span><span class="arrow" aria-hidden="true">→</span><span>Saí cedo <mark class="hl-v">porque chovia</mark>.</span><span class="fn">adjunto adverbial → oração adverbial · exemplo criado</span></div>
+</div>
+<p>Daí vem a regra que organiza o capítulo inteiro: <b>uma oração subordinada se classifica pela função que exerce dentro da outra</b>, a principal. Se ocupa o lugar de um substantivo, é <b>substantiva</b>; se caracteriza um substantivo, como faria um adjetivo, é <b>adjetiva</b>; se indica uma circunstância, como um advérbio, é <b>adverbial</b>.</p>
+<p>O material cobra duas habilidades diferentes, e vale treinar as duas:</p>
+<div class="grid2">
+  <div class="card"><p class="lab">Habilidade 1</p><h4>Classificar</h4><p>Descobrir que função a oração exerce. É o que pedem as 42 frases a)–pp) da apostila, todas centradas nas substantivas, e as questões 01, 04, 07 e 14.</p></div>
+  <div class="card"><p class="lab">Habilidade 2</p><h4>Interpretar</h4><p>Perceber o que muda no sentido — sobretudo quando uma vírgula transforma uma adjetiva restritiva em explicativa. <b>9 das 14</b> questões de fixação giram em torno disso (02, 03, 05, 06, 08, 11, 12, 13 e 14).</p></div>
+</div>
+<p>A aula segue esta ordem: os pré-requisitos (termos da oração e regência); as <b>substantivas</b> — os seis tipos, os casos especiais e a análise das 42 frases; as <b>adjetivas</b> — pronomes relativos, restritiva × explicativa e os vários tipos de “que”; e, por fim, os 14 exercícios resolvidos. As adverbiais aparecem no material só na definição inicial e em alternativas de exercícios; por transparência do papel, numa das fotos parece surgir o título da seção seguinte da apostila (adverbiais), que não foi enviada. Por isso esta aula dá apenas o necessário para reconhecê-las e descartá-las.</p>
+</section>
+
+<section id="pre-requisitos">
+<h2><span class="secnum">02</span>Pré-requisitos</h2>
+<p class="lead-in">Três ideias sustentam o capítulo. Se alguma estiver frágil, vale gastar cinco minutos aqui antes de seguir.</p>
+
+<h3 id="frase-oracao-periodo">Frase, oração e período</h3>
+<p>No início da apostila há um bloco de “conhecimento básico” que você completou à mão. As duas primeiras anotações estão certas; a terceira precisa de ajuste.</p>
+<p class="scroll-hint">↔ deslize a tabela para o lado</p>
+<div class="tbl">
+<table>
+  <thead><tr><th>Noção</th><th>Sua anotação</th><th>Versão precisa</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td class="cl">Frase</td><td>“Não precisa de verbo. Precisa de sentido.” <span class="pill ok">✓</span></td><td>Enunciado com sentido completo na situação de comunicação, com ou sem verbo.</td><td>“Silêncio!”, “Que calor!” — frases sem verbo.</td></tr>
+    <tr><td class="cl">Oração</td><td>“Precisa de verbo. Não precisa de sentido.” <span class="pill ok">✓</span></td><td>Enunciado organizado em torno de um verbo (ou locução verbal). Pode não ter sentido completo sozinho.</td><td>“que todos estudem” é oração, mas sozinha não se sustenta.</td></tr>
+    <tr><td class="cl">Período</td><td>“Intervalo entre verbos” <span class="pill no">ajustar</span></td><td>Frase formada por uma ou mais orações; vai do início até a pontuação final (. ! ? …). <b>Simples</b> = 1 oração; <b>composto</b> = 2 ou mais.</td><td>“É importante que todos estudem.” — período composto: 2 verbos, 2 orações.</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="callout warn">
+  <span class="tag warn">Atenção à interpretação</span>
+  <p>Lida ao pé da letra, a anotação “intervalo entre verbos” não define <i>período</i>: quem se organiza em torno de um verbo é a <b>oração</b>, e o período é delimitado pela <b>pontuação</b>. Provavelmente ela registra um atalho dito em aula — <i>para separar as orações de um período, procure os verbos</i>. Guarde com esse sentido: conte os verbos (ou locuções verbais) para saber quantas orações existem.</p>
+</div>
+<p>Locução verbal conta como um verbo só. Em “Perguntam se <b>vai haver</b> aula”, “vai haver” é uma locução (ir + infinitivo): o período tem duas orações, não três.</p>
+
+<h3 id="termos">Os termos da oração que voltam como orações</h3>
+<p>Cada oração subordinada substantiva ou adjetiva “imita” um termo que você já conhece do período simples. A última coluna antecipa o nome que a oração recebe quando assume aquela função.</p>
+<p class="scroll-hint">↔ deslize a tabela para o lado</p>
+<div class="tbl">
+<table>
+  <thead><tr><th>Termo</th><th>O que faz</th><th>No período simples</th><th>Vira a oração…</th></tr></thead>
+  <tbody>
+    <tr><td class="cl">Sujeito</td><td>É aquilo de que se declara algo; concorda com o verbo.</td><td>É importante <span class="term">o estudo de todos</span>.</td><td>substantiva <b>subjetiva</b></td></tr>
+    <tr><td class="cl">Predicativo do sujeito</td><td>Atribui característica ou identificação ao sujeito por meio de verbo de ligação (ser, estar, ficar, parecer…).</td><td>Meu desejo é <span class="term">a felicidade de todos</span>.</td><td>substantiva <b>predicativa</b></td></tr>
+    <tr><td class="cl">Objeto direto</td><td>Completa verbo transitivo direto, sem preposição obrigatória.</td><td>O aluno disse <span class="term">a verdade</span>.</td><td>substantiva <b>objetiva direta</b></td></tr>
+    <tr><td class="cl">Objeto indireto</td><td>Completa verbo transitivo indireto, com a preposição que o <b>verbo</b> exige.</td><td>Genebaldo aspirava <span class="term">ao posto de chefe</span>.</td><td>substantiva <b>objetiva indireta</b></td></tr>
+    <tr><td class="cl">Complemento nominal</td><td>Completa um nome (substantivo, adjetivo ou advérbio), com a preposição que o <b>nome</b> exige.</td><td>A população não perde a esperança <span class="term">da redistribuição da renda</span>.</td><td>substantiva <b>completiva nominal</b></td></tr>
+    <tr><td class="cl">Aposto</td><td>Explica, especifica ou resume outro termo; vem depois de dois-pontos, vírgulas ou travessão.</td><td>Uma coisa me intrigava: <span class="term">o choro daquela criança</span>.</td><td>substantiva <b>apositiva</b></td></tr>
+    <tr><td class="cl">Agente da passiva</td><td>Indica quem pratica a ação na voz passiva (com “por” ou “de”).</td><td>O trabalho foi realizado <span class="term">por especialistas</span>.</td><td>caso especial (ver <a href="#casos-especiais">3.10</a>)</td></tr>
+    <tr><td class="cl">Adjunto adnominal</td><td>Caracteriza ou determina um substantivo (adjetivos, locuções adjetivas…).</td><td>Todo homem <span class="term">mentiroso</span> é indigno de confiança.</td><td><b>adjetiva</b></td></tr>
+    <tr><td class="cl">Adjunto adverbial</td><td>Indica circunstância: tempo, causa, finalidade, consequência…</td><td>Saí cedo <span class="term">por causa da chuva</span>.</td><td><b>adverbial</b></td></tr>
+  </tbody>
+</table>
+</div>
+<p class="tbl-cap">Os períodos simples da terceira coluna foram criados a partir das frases da apostila, para mostrar o termo antes da expansão.</p>
+
+<h3 id="regencia">Transitividade, verbo de ligação, voz passiva e regência</h3>
+<ul>
+  <li><b>Verbo transitivo direto (VTD)</b> pede complemento sem preposição obrigatória: dizer algo, prometer algo, confirmar algo.</li>
+  <li><b>Verbo transitivo indireto (VTI)</b> pede complemento com preposição: aspirar <i>a</i> (= desejar), duvidar <i>de</i>, depender <i>de</i>, obedecer <i>a</i>, insistir <i>em</i>.</li>
+  <li><b>Verbo de ligação (VL)</b> liga o sujeito a uma característica: ser, estar, ficar, parecer, continuar, permanecer.</li>
+  <li><b>Nomes também têm regência:</b> medo <i>de</i>, certeza <i>de</i>, esperança <i>de</i>, dúvida <i>de/sobre</i>, anseio <i>de/por</i>, comparável <i>a</i>, fiel <i>a</i>, favorável <i>a</i> — exatamente a lista da sua apostila.</li>
+  <li><b>Voz passiva</b>: analítica (ser/ficar + particípio: “foi realizado”, “ficou combinado”) ou sintética (verbo + <i>se</i>: “combinou-se”, “sabe-se”). Nela, o que seria objeto passa a sujeito.</li>
+  <li><b>Haver = existir</b> é impessoal: não tem sujeito, fica no singular, e aquilo que “existe” é objeto direto (“Houve problemas”).</li>
+</ul>
+<div class="callout plus">
+  <span class="tag plus">Complemento para melhor compreensão</span>
+  <p>A regência pode mudar o sentido do verbo: <b>aspirar a</b> algo = desejar (VTI); <b>aspirar</b> algo = inalar (VTD). <b>Lembrar</b> algo (VTD) × <b>lembrar-se de</b> algo (pronominal, VTI). Essas diferenças decidem classificações mais adiante.</p>
+</div>
+<p>Guarde a pergunta que vai separar dois tipos de oração: <b>quem exige a preposição — o verbo ou o nome?</b></p>
+</section>
+
+<section id="explicacao">
+<h2><span class="secnum">03</span>Explicação completa</h2>
+<p class="lead-in">Primeiro, o conceito e o método para reconhecer as substantivas; depois, cada um dos seis tipos com os exemplos da apostila e as suas anotações; por fim, as adjetivas.</p>
+
+<h3 id="conceito"><span class="secnum">3.1</span>O que é uma oração subordinada</h3>
+<div class="callout src">
+  <span class="tag src">Na apostila</span>
+  <p><b>Conceito:</b> por “oração” deve-se entender um período simples que se expandiu; oração é a expansão de um termo, de uma expressão, de uma ideia, por meio de enunciado que apresente pelo menos um verbo.</p>
+</div>
+<p>Quando um termo se expande em oração, o período passa a ter duas camadas:</p>
+<ul>
+  <li><b>Oração principal</b>: a que contém o “lugar” ocupado pela outra. Sem a subordinada, ela fica com um buraco: “É importante ___” (importante o quê?).</li>
+  <li><b>Oração subordinada</b>: a que ocupa esse lugar, exercendo uma função sintática dentro da principal. Por isso se diz que ela “depende” da principal.</li>
+</ul>
+<div class="an">
+  <span class="seg p"><span class="t">É importante</span><span class="l">oração principal</span></span>
+  <span class="seg s"><span class="t">que todos estudem.</span><span class="l">oração subordinada · função de sujeito</span></span>
+</div>
+<p>“Principal” não quer dizer “mais importante para o sentido”: quer dizer apenas a oração que acolhe a outra como um de seus termos.</p>
+<p>Quanto à forma, a subordinada pode ser:</p>
+<ul>
+  <li><b>Desenvolvida</b> — começa com um conectivo e tem verbo conjugado: “<b>que</b> todos estudem”, “<b>se</b> a Hermengarda saiu comigo”, “<b>que</b> mente”.</li>
+  <li><b>Reduzida</b> — não tem conectivo, e o verbo fica numa forma nominal (nesta apostila, sempre o infinitivo): “a <b>galgar</b> o posto de chefe”, “<b>descrever</b> a cena”, “aquela criança <b>chorar</b> sempre no mesmo horário”.</li>
+</ul>
+<p>Para classificar uma reduzida, <b>desenvolva-a</b>: “É impossível descrever a cena” equivale a “É impossível que se descreva a cena”.</p>
+
+<h3 id="tres-tipos"><span class="secnum">3.2</span>Os três tipos de subordinada</h3>
+<div class="callout src">
+  <span class="tag src">Na apostila</span>
+  <p><b>Substantivas</b> têm valor de substantivo; <b>adjetivas</b> têm valor de adjetivo; <b>adverbiais</b> expressam circunstâncias, função própria dos advérbios.</p>
+</div>
+<p class="scroll-hint">↔ deslize a tabela para o lado</p>
+<div class="tbl">
+<table>
+  <thead><tr><th>Tipo</th><th>Função na principal</th><th>Começa geralmente com</th><th>Exemplo do material</th></tr></thead>
+  <tbody>
+    <tr><td class="cl">Substantiva</td><td>sujeito, objeto direto, objeto indireto, complemento nominal, predicativo ou aposto</td><td>conjunção integrante (<i>que</i>, <i>se</i>), palavra interrogativa, ou infinitivo sem conectivo</td><td>É importante <mark class="hl">que todos estudem</mark>.</td></tr>
+    <tr><td class="cl">Adjetiva</td><td>adjunto adnominal de um nome anterior (o <b>antecedente</b>)</td><td>pronome relativo (<i>que, o qual, quem, cujo, onde…</i>)</td><td>Todo homem <mark class="hl-a">que mente</mark> é indigno de confiança.</td></tr>
+    <tr><td class="cl">Adverbial</td><td>adjunto adverbial (tempo, causa, finalidade, consequência…)</td><td>conjunção adverbial (<i>quando, porque, para que, tão… que…</i>)</td><td>…a bola de neve está tão grande <mark class="hl-v">que não é mais possível vencê-la</mark>… (questão 07c)</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="callout tip">
+  <span class="tag tip">Atalho geral</span>
+  <p>A substantiva cabe no lugar de <b>isso</b>; a adjetiva equivale a um <b>adjetivo</b> (“que mente” = mentiroso); a adverbial equivale a um <b>advérbio</b> ou expressão de circunstância (“porque chovia” = por causa da chuva).</p>
+</div>
+
+<h3 id="reconhecer"><span class="secnum">3.3</span>Como reconhecer uma oração substantiva</h3>
+<p>Na sua folha, sobre o segundo exemplo de subjetiva, está anotado <b>“isso ou isto”</b>. Esse é o teste central: troque a oração inteira por <i>isso</i> (ou <i>disso</i>, <i>a isso</i>, <i>nisso</i>, conforme a preposição). Se a frase continuar gramatical, a oração é substantiva — e <b>a função do “isso” dá o nome da oração</b>.</p>
+<div class="an">
+  <span class="seg p"><span class="t">É importante</span><span class="l">principal</span></span>
+  <span class="seg s"><span class="t">isso.</span><span class="l">“isso” = sujeito → subjetiva</span></span>
+</div>
+<p>As substantivas são introduzidas por quatro tipos de “porta de entrada”:</p>
+<ol>
+  <li><b>Conjunção integrante</b> <i>que</i> (afirmação) ou <i>se</i> (dúvida, pergunta indireta): “Dizem <b>que</b> ele vem”; “Foram confirmar <b>se</b> a Hermengarda saiu comigo”. A conjunção integrante não retoma palavra nenhuma nem tem função dentro da oração: só a encaixa na principal. Prova: tirando o conectivo, sobra uma oração completa (“ele vem”, “a Hermengarda saiu comigo”).</li>
+  <li><b>Palavra interrogativa</b> em pergunta indireta — <i>quem, que, qual, quanto, onde, como, quando, por que</i>: “Perguntam <b>quem</b> falou” (= Perguntam: “Quem falou?”), “O problema era <b>onde</b> fazer a pesquisa”, “Não sei <b>que</b> livro ler nas férias”.</li>
+  <li><b>“Quem” ou “quanto(s)” sem antecedente</b>: “<b>Quem</b> corre cansa”, “Obedeço a <b>quantos</b> me ajudam” (ver <a href="#casos-especiais">3.10</a>).</li>
+  <li><b>Nenhum conectivo, verbo no infinitivo</b> (reduzida): “O professor prometeu <b>ajudar</b>”.</li>
+</ol>
+<h4>Procedimento em quatro passos</h4>
+<ol class="steps">
+  <li><b>Ache os verbos</b> e separe as orações (uma por verbo ou locução verbal).</li>
+  <li><b>Identifique a principal</b>: é a que fica com um “buraco” quando você retira a outra.</li>
+  <li><b>Troque a subordinada por “isso”</b>, mantendo a preposição que estiver antes dela.</li>
+  <li><b>Analise o período simples que sobrou</b>: a função de “isso” é o nome da oração.</li>
+</ol>
+
+<h3 id="subjetiva"><span class="secnum">3.4</span>Subjetiva — a oração é o sujeito</h3>
+<p>A subordinada <b>subjetiva</b> exerce a função de <b>sujeito</b> do verbo da principal. Por isso a principal parece “não ter sujeito”, e o verbo dela fica na 3ª pessoa do singular.</p>
+<p>Ao lado de “É importante que todos estudem”, você anotou <b>S/V/C com o S circulado</b>. A leitura é esta: numa estrutura com verbo de ligação há três lugares — <b>S</b>ujeito, <b>V</b>erbo e <b>C</b>omplemento (o predicativo). Se a oração ocupa o S, é subjetiva; se ocupa o C, é predicativa (próxima seção).</p>
+<div class="svc" aria-label="Estrutura sujeito, verbo, complemento">
+  <div class="on"><b>S · sujeito</b>que todos estudem</div>
+  <div><b>V</b>é</div>
+  <div><b>C · predicativo</b>importante</div>
+</div>
+<p class="svc-cap">Na ordem direta: “Que todos estudem é importante.” A oração ocupa o lugar do sujeito.</p>
+<h4>Onde a subjetiva aparece</h4>
+<ul>
+  <li><b>Verbo de ligação + predicativo</b>: “É importante que…”, “É impossível…”, “É preciso que…”, “Não é verdade…”, “Ficou combinado que…”.</li>
+  <li><b>Verbos como</b> convir, cumprir (= ser necessário), parecer, importar, constar, bastar, acontecer: “Convém que leias atentamente o texto”, “Cumpre que ajudes”, “Parece que ele vem”.</li>
+  <li><b>Voz passiva</b>, analítica ou sintética: “Combinou-se que ele viria” (= foi combinado que ele viria), “Sabe-se que…”, “Diz-se que…”.</li>
+</ul>
+<p>O segundo exemplo da apostila é “Não é verdade tudo o que dizem sobre você”. Suas anotações marcam <b>V</b> em “é”, <b>C</b> em “verdade”, escrevem “isso ou isto” sobre a parte final e a classificam como <b>O.S. Subst. Subj.</b> Teste: “Não é verdade <b>isso</b>” — o bloco final ocupa o lugar do sujeito. Esse exemplo tem uma particularidade de análise, discutida em <a href="#casos-especiais">3.10</a>.</p>
+<div class="callout trap">
+  <span class="tag trap">Pegadinha</span>
+  <p>“<b>Dizem</b> que ele vem” (exemplo da apostila) é <b>objetiva direta</b>: “dizem” tem sujeito indeterminado, e a oração é aquilo que se diz. Já “<b>Diz-se</b> que ele vem” (exemplo criado) é <b>subjetiva</b>: a voz é passiva sintética (“isso é dito”). Trocar “dizem” por “diz-se” muda a classificação.</p>
+</div>
+
+<h3 id="predicativa"><span class="secnum">3.5</span>Predicativa — a oração é o predicativo</h3>
+<p>A <b>predicativa</b> exerce a função de <b>predicativo do sujeito</b>: vem depois de um verbo de ligação (quase sempre <i>ser</i>), e o sujeito é um nome expresso, normalmente determinado por artigo ou possessivo — <i>meu desejo, a verdade, o problema, o seu pedido, a resposta do diretor</i>.</p>
+<div class="an">
+  <span class="seg p"><span class="t">Meu desejo</span><span class="l">sujeito</span></span>
+  <span class="seg p"><span class="t">é</span><span class="l">verbo de ligação</span></span>
+  <span class="seg s"><span class="t">que todos sejam felizes no vestibular.</span><span class="l">O.S.S. predicativa</span></span>
+  <p class="note">Suas anotações: “O.P.” sobre “Meu desejo é”, “Suj.”, “V” e “C” embaixo, e “S/V/(C)” com o C circulado — a oração ocupa o lugar do complemento.</p>
+</div>
+<div class="svc" aria-label="Estrutura sujeito, verbo, complemento da predicativa">
+  <div><b>S · sujeito</b>Meu desejo</div>
+  <div><b>V</b>é</div>
+  <div class="on"><b>C · predicativo</b>que todos sejam felizes no vestibular</div>
+</div>
+<p>O segundo exemplo vem invertido: “<mark class="hl">Que tenhas um ano próspero e feliz</mark> são os meus votos.” Você marcou C sob a oração, V sob “são” e S sob “os meus votos”. Na ordem direta fica claro: “<b>Os meus votos</b> são <i>que tenhas um ano próspero e feliz</i>.” A oração caracteriza o sujeito “os meus votos” — é predicativa, mesmo aparecendo no começo da frase.</p>
+<p>O terceiro, “A verdade é que todos são inteligentes”, segue o padrão: sujeito “a verdade” + verbo de ligação + oração predicativa.</p>
+<div class="callout trap">
+  <span class="tag trap">Pegadinha — um artigo muda tudo</span>
+  <p>Os dois exemplos estão na apostila: “Não é <b>verdade</b> tudo o que dizem” — “verdade”, sem artigo, é o predicativo, e o bloco final é o sujeito → <b>subjetiva</b>. “<b>A verdade</b> é que todos são inteligentes” — “a verdade”, com artigo, é o sujeito, e a oração é o predicativo → <b>predicativa</b>. Regra prática: <i>É verdade que…</i> = subjetiva; <i>A verdade é que…</i> = predicativa.</p>
+</div>
+<p>Quando os dois lados do “ser” parecem substantivos, coloque na ordem direta e pergunte <b>de que se está falando</b>. O nome determinado (“o problema”, “meu desejo”) é o assunto — o sujeito; a oração diz o que ele é.</p>
+
+<h3 id="objetiva-direta"><span class="secnum">3.6</span>Objetiva direta — a oração é o objeto direto</h3>
+<p>A <b>objetiva direta</b> completa um <b>verbo transitivo direto</b> da principal, sem preposição. Aparece depois de verbos como dizer, perguntar, saber, querer, pensar, prometer, confirmar, comentar, combinar.</p>
+<div class="an">
+  <span class="seg p"><span class="t">Foram confirmar</span><span class="l">principal</span></span>
+  <span class="seg s"><span class="t">se a Hermengarda saiu comigo.</span><span class="l">O.S.S. objetiva direta</span></span>
+  <p class="note">Sua anotação marca “confirmar” como o verbo e a oração como “O.S. Subst. O.D.”: confirmar o quê? → isso. O “se” é conjunção integrante, com ideia de dúvida (pergunta indireta).</p>
+</div>
+<div class="an">
+  <span class="seg p"><span class="t">Dizem</span><span class="l">principal · sujeito indeterminado</span></span>
+  <span class="seg s"><span class="t">que ele vem.</span><span class="l">O.S.S. objetiva direta</span></span>
+</div>
+<h4>Três situações que confundem</h4>
+<ul>
+  <li><b>Sujeito indeterminado ou oculto na principal não muda nada</b>: “Dizem que ele vem”, “Perguntam quem falou”, “Comentam que ele vem” — todas objetivas diretas.</li>
+  <li><b>Haver = existir não tem sujeito</b>; o que existe é objeto direto. Em “Não houve <mark class="hl">quem lhe acudisse</mark>”, a oração é <b>objetiva direta</b>, não subjetiva.</li>
+  <li><b>Reduzida de infinitivo também é oração</b>: “O professor prometeu <mark class="hl">ajudar</mark>” = prometeu isso (= que ajudaria) → objetiva direta reduzida. <i>Prometer, fingir, merecer</i> não são verbos auxiliares; por isso o infinitivo forma outra oração.</li>
+</ul>
+
+<h3 id="objetiva-indireta"><span class="secnum">3.7</span>Objetiva indireta — a oração é o objeto indireto</h3>
+<p>A <b>objetiva indireta</b> completa um <b>verbo transitivo indireto</b> da principal e vem precedida da preposição que <b>esse verbo</b> exige.</p>
+<div class="an">
+  <span class="seg p"><span class="t">Genebaldo aspirava</span><span class="l">principal · S + V</span></span>
+  <span class="seg s"><span class="t">a galgar o posto de chefe.</span><span class="l">O.S.S. objetiva indireta reduzida (prep. “a”)</span></span>
+  <p class="note">Suas anotações: S, V e “Prep.” sobre o “a”, e “O.S. Subst. O.I.”. <i>Aspirar a</i> = desejar, almejar (VTI); <i>galgar</i> = subir, alcançar.</p>
+</div>
+<div class="an">
+  <span class="seg p"><span class="t">Duvidava</span><span class="l">principal</span></span>
+  <span class="seg s"><span class="t">de estarem prontos os relatórios.</span><span class="l">O.S.S. objetiva indireta reduzida</span></span>
+  <p class="note"><i>Duvidar de</i>. O infinitivo “estarem” é <b>flexionado</b>: concorda com o seu próprio sujeito, “os relatórios”.</p>
+</div>
+<p>Com <b>verbos pronominais</b>, a regência muda: <i>lembrar-se de</i>, <i>esquecer-se de</i>. “Lembrei-me <mark class="hl">de que era sábado</mark>” e “Não me esqueço <mark class="hl">de que estava doente</mark>” são objetivas indiretas. Sem o pronome — “Lembrei que era sábado” —, o verbo é transitivo direto, e a oração passa a objetiva direta.</p>
+<div class="callout plus">
+  <span class="tag plus">Complemento para melhor compreensão</span>
+  <p>Na fala, é comum omitir a preposição antes do “que” (“Lembrei-me que era sábado”, “Duvido que ele venha”). Na escrita formal, prefira mantê-la. E repare: mesmo quando ela some, a análise tradicional continua sendo <b>objetiva indireta</b>, porque quem pede a preposição é o verbo.</p>
+</div>
+
+<h3 id="completiva-nominal"><span class="secnum">3.8</span>Completiva nominal — a oração completa um nome</h3>
+<p>A <b>completiva nominal</b> completa o sentido de um <b>nome</b> da principal — substantivo, adjetivo ou advérbio — e vem com a preposição que <b>esse nome</b> exige.</p>
+<div class="callout src">
+  <span class="tag src">Na apostila</span>
+  <p>A lista de nomes que pedem complemento: <b>medo · certeza · esperança · dúvida · anseio · comparável · fiel · favorável</b>.</p>
+</div>
+<p class="scroll-hint">↔ deslize a tabela para o lado</p>
+<div class="tbl narrow">
+<table>
+  <thead><tr><th>Nome</th><th>Pede</th><th>Exemplo com oração completiva nominal</th></tr></thead>
+  <tbody>
+    <tr><td class="cl">medo</td><td>de</td><td>Tenho medo <mark class="hl">de que a prova seja difícil</mark>. <span class="muted">(criado)</span></td></tr>
+    <tr><td class="cl">certeza</td><td>de</td><td>Tenho certeza <mark class="hl">de que você vai passar</mark>. <span class="muted">(criado)</span></td></tr>
+    <tr><td class="cl">esperança</td><td>de</td><td>A população não perde a esperança <mark class="hl">de que a renda seja redistribuída</mark>. <span class="muted">(apostila)</span></td></tr>
+    <tr><td class="cl">dúvida</td><td>de, sobre</td><td>Havia dúvida <mark class="hl">sobre se o jogo aconteceria</mark>. <span class="muted">(criado)</span></td></tr>
+    <tr><td class="cl">anseio</td><td>de, por</td><td>O anseio <mark class="hl">de que a guerra acabasse</mark> unia o país. <span class="muted">(criado)</span></td></tr>
+    <tr><td class="cl">comparável</td><td>a</td><td>O susto foi comparável <mark class="hl">a ver um fantasma</mark>. <span class="muted">(criado)</span></td></tr>
+    <tr><td class="cl">fiel</td><td>a</td><td>Sempre foi fiel <mark class="hl">a quem o ajudou</mark>. <span class="muted">(criado)</span></td></tr>
+    <tr><td class="cl">favorável</td><td>a</td><td>O diretor foi favorável <mark class="hl">a que saíssemos mais cedo</mark>. <span class="muted">(criado)</span></td></tr>
+  </tbody>
+</table>
+</div>
+<div class="an">
+  <span class="seg p"><span class="t">Estava era louca</span><span class="l">principal</span></span>
+  <span class="seg s"><span class="t">por que o dia amanhecesse depressa.</span><span class="l">O.S.S. completiva nominal de “louca”</span></span>
+  <p class="note">Exemplo de Machado de Assis citado na apostila: “louca por” = ansiosa por.</p>
+</div>
+<div class="callout plus">
+  <span class="tag plus">Complemento para melhor compreensão</span>
+  <p>Dois detalhes do exemplo de Machado: (1) “<b>por que</b>” aparece separado porque é a preposição <i>por</i> (exigida por “louca”) seguida da conjunção integrante <i>que</i>; (2) o “<b>era</b>” de “Estava era louca” é um verbo de realce (expletivo): pode ser retirado sem prejuízo — “Estava louca por que o dia amanhecesse depressa”. Ele só intensifica, como o “é que” da questão 04.</p>
+</div>
+<div class="grid2">
+  <div class="card r"><p class="lab">A preposição vem do verbo</p><h4>Objetiva indireta</h4><p>“<b>Duvidava</b> de estarem prontos os relatórios.” — <i>duvidar de</i>.</p></div>
+  <div class="card e"><p class="lab">A preposição vem do nome</p><h4>Completiva nominal</h4><p>“Tinha <b>dúvida</b> de estarem prontos os relatórios.” <span class="muted">(criado)</span> — <i>dúvida de</i>.</p></div>
+</div>
+<p>É por isso que “Tenho esperança de que nosso time vença” é completiva nominal: o verbo <i>ter</i> não pede “de”; quem pede é o nome <i>esperança</i>.</p>
+
+<h3 id="apositiva"><span class="secnum">3.9</span>Apositiva — a oração é o aposto</h3>
+<p>A <b>apositiva</b> funciona como <b>aposto</b>: explica, especifica ou desenvolve o conteúdo de um nome da principal — em geral um nome “vago” que anuncia algo (<i>coisa, conselho, condição, sonho, boato</i>) ou o pronome <i>isto</i>. Costuma vir depois de <b>dois-pontos</b> (às vezes de travessão ou vírgula) e não leva preposição.</p>
+<div class="an">
+  <span class="seg p"><span class="t">Uma coisa me intrigava:</span><span class="l">principal</span></span>
+  <span class="seg s"><span class="t">aquela criança chorar sempre no mesmo horário.</span><span class="l">O.S.S. apositiva reduzida de infinitivo</span></span>
+  <p class="note">A oração diz qual é a “coisa”. Teste: dá para dizer “a coisa era <i>aquela criança chorar…</i>”.</p>
+</div>
+<div class="grid2">
+  <div class="card"><p class="lab">Apositiva × predicativa</p><p>“Meu desejo <b>é</b> que todos sejam felizes.” → verbo de ligação: <b>predicativa</b>.<br>“Tenho um desejo<b>:</b> que todos sejam felizes.” <span class="muted">(criado)</span> → dois-pontos explicando “desejo”: <b>apositiva</b>.</p></div>
+  <div class="card"><p class="lab">Apositiva × adjetiva explicativa</p><p>“Dei-lhe um conselho<b>:</b> que não se familiarizasse com estranhos.” → conteúdo do conselho; <i>que</i> = conjunção integrante: <b>apositiva</b>.<br>“Dei-lhe um conselho<b>,</b> que ele não seguiu.” <span class="muted">(criado)</span> → <i>que</i> = o qual; acrescenta uma informação: <b>adjetiva explicativa</b>.</p></div>
+</div>
+
+<h3 id="casos-especiais"><span class="secnum">3.10</span>Casos especiais da lista</h3>
+<p>Quatro situações da apostila fogem do padrão “que/se + oração”. Todas aparecem nas frases a)–pp), e é nelas que a análise costuma travar.</p>
+
+<h4>1. “Quem” e “quanto(s)” sem antecedente</h4>
+<p>Em “Quem corre cansa”, o <i>quem</i> não retoma nenhuma palavra anterior: significa “a pessoa que”, “aquele que”. Em “Obedeço a quantos me ajudam”, <i>quantos</i> significa “todos os que”. A oração inteira ocupa uma função na principal, e é por essa função que ela se classifica:</p>
+<p class="scroll-hint">↔ deslize a tabela para o lado</p>
+<div class="tbl narrow">
+<table>
+  <thead><tr><th>Frase da apostila</th><th>O bloco é…</th><th>Classificação</th></tr></thead>
+  <tbody>
+    <tr><td>aa) <mark class="hl">Quem corre</mark> cansa.</td><td>sujeito de “cansa”</td><td class="cl">subjetiva</td></tr>
+    <tr><td>e) Não merece comer, <mark class="hl">quem não quer trabalhar</mark>.</td><td>sujeito de “merece”</td><td class="cl">subjetiva</td></tr>
+    <tr><td>k) Não houve <mark class="hl">quem lhe acudisse</mark>.</td><td>objeto direto de “houve”</td><td class="cl">objetiva direta</td></tr>
+    <tr><td>s) Obedeço <mark class="hl">a quantos me ajudam</mark>.</td><td>objeto indireto de “obedeço”</td><td class="cl">objetiva indireta</td></tr>
+    <tr><td>gg) Dependo <mark class="hl">de quem me protege</mark>.</td><td>objeto indireto de “dependo”</td><td class="cl">objetiva indireta</td></tr>
+    <tr><td>kk) O trabalho foi realizado <mark class="hl">por quem entende do assunto</mark>.</td><td>agente da passiva</td><td class="cl">ver item 2</td></tr>
+    <tr><td>ll) Mariquinha é amada <mark class="hl">por quantos a conhecem</mark>.</td><td>agente da passiva</td><td class="cl">ver item 2</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="callout warn">
+  <span class="tag warn">Atenção à interpretação</span>
+  <p>Há duas análises nas gramáticas. A primeira — adotada pela apostila, que põe essas frases na lista das substantivas — trata <i>quem</i>/<i>quanto</i> como <b>pronome relativo indefinido</b>, sem antecedente, e classifica a oração pela função que ela exerce. A segunda <b>decompõe</b> o <i>quem</i> em “aquele que”: “Aquele | que corre | cansa” — aí “aquele” é o sujeito da principal e “que corre” vira adjetiva restritiva. Na prova da escola, siga a análise da apostila; conheça a outra para não estranhar se aparecer.</p>
+  <p class="src-note">Sobre o rótulo “pronome relativo indefinido” e a ideia de antecedente subentendido nas gramáticas tradicionais, veja o artigo da revista <i>Alfa</i> (Unesp) listado nas <a href="#fontes">fontes</a>.</p>
+</div>
+<div class="callout trap">
+  <span class="tag trap">Pegadinha</span>
+  <p>Não confunda o <b>quem relativo indefinido</b> (= aquele que) com o <b>quem interrogativo</b>. “Perguntam quem falou” vira pergunta direta (“Quem falou?”): é interrogativa indireta, objetiva direta. “Quem corre cansa” não vira pergunta nenhuma.</p>
+</div>
+<p>Na frase e), a vírgula antes de “quem” separa o sujeito, que vem depois, do verbo. Na norma-padrão, evita-se vírgula entre sujeito e verbo; aqui ela marca ênfase, típica de frase proverbial — não a imite na redação. Na mesma frase, “comer” é objetiva direta reduzida de infinitivo de “merece” (merece o quê?).</p>
+
+<h4>2. Oração com função de agente da passiva (kk e ll)</h4>
+<p>Nas frases kk) e ll), a principal está na <b>voz passiva</b> (“foi realizado”, “é amada”), e a subordinada indica <b>quem pratica a ação</b>. Passe para a ativa e confira: “Quem entende do assunto realizou o trabalho”; “Quantos a conhecem amam Mariquinha”.</p>
+<div class="callout warn">
+  <span class="tag warn">Atenção à interpretação</span>
+  <p>A lista de seis substantivas da sua apostila segue a Nomenclatura Gramatical Brasileira (NGB, de 1959), que <b>não prevê</b> um tipo “agente da passiva”. Mesmo assim, muitos professores e gramáticos classificam essas orações como substantivas com função de agente da passiva; outros preferem decompor (“por aquele | que entende do assunto” → adjetiva restritiva). Se cair na prova, use o rótulo que o professor usou em aula; na dúvida, mostre que você reconhece a função: agente da passiva.</p>
+  <p class="src-note">Há uma dissertação da UERJ dedicada justamente às orações subordinadas não classificadas pela NGB, entre elas a de agente da passiva — veja as <a href="#fontes">fontes</a>.</p>
+</div>
+
+<h4>3. “Tudo o que dizem sobre você”</h4>
+<p>Na apostila, “Não é verdade tudo o que dizem sobre você” é exemplo de subjetiva, e suas anotações confirmam (“isso ou isto”; O.S. Subst. Subj.).</p>
+<div class="callout warn">
+  <span class="tag warn">Atenção à interpretação</span>
+  <p>Numa análise mais rigorosa, muitas gramáticas leem “o que” como “aquilo que”: o <i>o</i> é pronome demonstrativo e o <i>que</i> é pronome relativo — assim, “que dizem sobre você” seria adjetiva restritiva ligada a esse “o”. As duas leituras concordam no essencial: o bloco “tudo o que dizem sobre você” é o <b>sujeito</b> de “não é verdade”. Na prova da escola, use a classificação do professor.</p>
+</div>
+
+<h4>4. Reduzidas de infinitivo</h4>
+<p>Boa parte dos exemplos da apostila é reduzida: b, f, g, l, r, v, w, ee, ff, jj, além de “Genebaldo…”, “Duvidava…” e “Uma coisa me intrigava…”. Sem conectivo, a classificação depende só da função — e o teste do “isso” funciona igual: “É impossível descrever a cena” → “É impossível <i>isso</i>” → subjetiva reduzida de infinitivo.</p>
+<ul>
+  <li>O infinitivo pode ser <b>flexionado</b> e ter sujeito próprio: “de <b>estarem</b> prontos os relatórios”, “<b>terem</b> fugido os prisioneiros”.</li>
+  <li>Cuidado com as <b>locuções verbais</b>: verbos como poder, dever, querer e ir + infinitivo costumam ser tratados como auxiliares e formam uma oração só (“vai haver”, “quer trabalhar”). Já prometer, fingir, merecer e aspirar não são auxiliares: o infinitivo depois deles forma outra oração.</li>
+</ul>
+
+<h3 id="frases"><span class="secnum">3.11</span>As 42 frases a)–pp), analisadas</h3>
+<p>A apostila pede “Analise as frases abaixo” e não traz gabarito para essa lista. A classificação a seguir aplica os critérios desta aula, e a coluna “Por quê” mostra o teste que decide cada caso. Para treinar, ative o modo treino: as respostas somem e reaparecem quando você toca na linha.</p>
+<div class="toolbar js-only"><button class="btn" type="button" data-treino="tabela-frases" aria-pressed="false">Modo treino: esconder respostas</button></div>
+<div class="counts" aria-label="Contagem por tipo">
+  <span>Subjetiva <b>10</b></span><span>Objetiva direta <b>12</b></span><span>Objetiva indireta <b>5</b></span><span>Completiva nominal <b>4</b></span><span>Predicativa <b>5</b></span><span>Apositiva <b>5</b></span><span>Agente da passiva <b>2</b></span>
+</div>
+<p class="tbl-cap">A frase mm) tem duas subordinadas (uma subjetiva e uma apositiva); por isso a soma dá 43.</p>
+<div class="tbl" id="tabela-frases">
+<table>
+  <thead><tr><th>Item</th><th>Frase · subordinada destacada</th><th>Classificação</th><th>Por quê</th></tr></thead>
+  <tbody>
+    <tr><td class="it">a)</td><td>O aluno disse <mark class="hl">que entendeu a explicação</mark>.</td><td class="cl ans"><span>Objetiva direta</span></td><td class="ans"><span>Disse <i>isso</i>: completa “disse” (VTD), sem preposição.</span></td></tr>
+    <tr><td class="it">b)</td><td>O professor prometeu <mark class="hl">ajudar</mark>.</td><td class="cl ans"><span>Objetiva direta <small>reduzida de infinitivo</small></span></td><td class="ans"><span>Prometeu <i>isso</i> (= que ajudaria). “Prometer” não é auxiliar: são duas orações.</span></td></tr>
+    <tr><td class="it">c)</td><td>Perguntam <mark class="hl">quem falou</mark>.</td><td class="cl ans"><span>Objetiva direta</span></td><td class="ans"><span>Pergunta indireta (“Quem falou?”) completando “perguntam”.</span></td></tr>
+    <tr><td class="it">d)</td><td>Parece <mark class="hl">que ele vem</mark>.</td><td class="cl ans"><span>Subjetiva</span></td><td class="ans"><span><i>Isso</i> parece: a oração é o sujeito de “parece”.</span></td></tr>
+    <tr><td class="it">e)</td><td>Não merece comer, <mark class="hl">quem não quer trabalhar</mark>.</td><td class="cl ans"><span>Subjetiva</span></td><td class="ans"><span>Ordem direta: “Quem não quer trabalhar não merece comer”. “Comer” é objetiva direta reduzida de “merece”.</span></td></tr>
+    <tr><td class="it">f)</td><td>É impossível <mark class="hl">descrever a cena</mark>.</td><td class="cl ans"><span>Subjetiva <small>reduzida de infinitivo</small></span></td><td class="ans"><span><i>Isso</i> é impossível.</span></td></tr>
+    <tr><td class="it">g)</td><td>Obra é de vilão <mark class="hl">atirar a pedra</mark> e <mark class="hl">esconder a mão</mark>.</td><td class="cl ans"><span>Subjetivas <small>reduzidas, coordenadas entre si</small></span></td><td class="ans"><span>Ordem direta: “Atirar a pedra e esconder a mão é obra de vilão”.</span></td></tr>
+    <tr><td class="it">h)</td><td>Cumpre <mark class="hl">que ajudes</mark>.</td><td class="cl ans"><span>Subjetiva</span></td><td class="ans"><span>“Cumprir” = ser necessário: <i>isso</i> cumpre.</span></td></tr>
+    <tr><td class="it">i)</td><td>Perguntam <mark class="hl">se vai haver aula</mark>.</td><td class="cl ans"><span>Objetiva direta</span></td><td class="ans"><span>“Se” = conjunção integrante (pergunta indireta); “vai haver” é locução verbal.</span></td></tr>
+    <tr><td class="it">j)</td><td>Comentam <mark class="hl">que ele vem</mark>.</td><td class="cl ans"><span>Objetiva direta</span></td><td class="ans"><span>Comentam <i>isso</i>; o sujeito é indeterminado.</span></td></tr>
+    <tr><td class="it">k)</td><td>Não houve <mark class="hl">quem lhe acudisse</mark>.</td><td class="cl ans"><span>Objetiva direta</span></td><td class="ans"><span>“Haver” = existir: não tem sujeito; o que “houve” é objeto direto.</span></td></tr>
+    <tr><td class="it">l)</td><td>Fingia <mark class="hl">não prestar atenção</mark>.</td><td class="cl ans"><span>Objetiva direta <small>reduzida de infinitivo</small></span></td><td class="ans"><span>Fingia <i>isso</i>.</span></td></tr>
+    <tr><td class="it">m)</td><td>Lembrei-me <mark class="hl">de que era sábado</mark>.</td><td class="cl ans"><span>Objetiva indireta</span></td><td class="ans"><span>“Lembrar-se de”: a preposição vem do verbo pronominal.</span></td></tr>
+    <tr><td class="it">n)</td><td>Estava era louca <mark class="hl">por que o dia amanhecesse depressa</mark>.</td><td class="cl ans"><span>Completiva nominal</span></td><td class="ans"><span>Completa o adjetivo “louca” (louca <i>por</i>).</span></td></tr>
+    <tr><td class="it">o)</td><td>Tenho esperança <mark class="hl">de que nosso time vença</mark>.</td><td class="cl ans"><span>Completiva nominal</span></td><td class="ans"><span>Quem pede “de” é “esperança”, não “ter”.</span></td></tr>
+    <tr><td class="it">p)</td><td>Não temos informações <mark class="hl">sobre quem será o candidato</mark>.</td><td class="cl ans"><span>Completiva nominal</span></td><td class="ans"><span>Completa “informações” (informações <i>sobre</i>); “quem” é interrogativo.</span></td></tr>
+    <tr><td class="it">q)</td><td>A verdade é <mark class="hl">que todos sabem criticar</mark>.</td><td class="cl ans"><span>Predicativa</span></td><td class="ans"><span>Sujeito “a verdade” + verbo de ligação.</span></td></tr>
+    <tr><td class="it">r)</td><td>O problema era <mark class="hl">onde fazer a pesquisa</mark>.</td><td class="cl ans"><span>Predicativa <small>reduzida de infinitivo</small></span></td><td class="ans"><span>O problema era <i>isso</i>; “onde” é interrogativo.</span></td></tr>
+    <tr><td class="it">s)</td><td>Obedeço <mark class="hl">a quantos me ajudam</mark>.</td><td class="cl ans"><span>Objetiva indireta</span></td><td class="ans"><span>“Obedecer a”; “quantos” = todos os que.</span></td></tr>
+    <tr><td class="it">t)</td><td>Dei-lhe um conselho: <mark class="hl">que não se familiarizasse com estranhos</mark>.</td><td class="cl ans"><span>Apositiva</span></td><td class="ans"><span>Depois dos dois-pontos, diz qual foi o conselho.</span></td></tr>
+    <tr><td class="it">u)</td><td>Fiz-lhe uma condição: <mark class="hl">que me deixasse sair aos sábados</mark>.</td><td class="cl ans"><span>Apositiva</span></td><td class="ans"><span>Explica qual era a “condição”.</span></td></tr>
+    <tr><td class="it">v)</td><td>Alimenta um sonho: <mark class="hl">formar-se em Medicina</mark>.</td><td class="cl ans"><span>Apositiva <small>reduzida de infinitivo</small></span></td><td class="ans"><span>Explica qual é o “sonho”.</span></td></tr>
+    <tr><td class="it">w)</td><td>Corria um boato: <mark class="hl">terem fugido os prisioneiros</mark>.</td><td class="cl ans"><span>Apositiva <small>reduzida de infinitivo</small></span></td><td class="ans"><span>Explica o “boato”; o infinitivo concorda com “os prisioneiros”.</span></td></tr>
+    <tr><td class="it">x)</td><td>Convém <mark class="hl">que leias atentamente o texto</mark>.</td><td class="cl ans"><span>Subjetiva</span></td><td class="ans"><span><i>Isso</i> convém.</span></td></tr>
+    <tr><td class="it">y)</td><td>Ficou combinado <mark class="hl">que iríamos a Salvador</mark>.</td><td class="cl ans"><span>Subjetiva</span></td><td class="ans"><span><i>Isso</i> ficou combinado (verbo de ligação + predicativo).</span></td></tr>
+    <tr><td class="it">z)</td><td>Combinou-se <mark class="hl">que ele viria</mark>.</td><td class="cl ans"><span>Subjetiva</span></td><td class="ans"><span>Voz passiva sintética: <i>isso</i> foi combinado.</span></td></tr>
+    <tr><td class="it">aa)</td><td><mark class="hl">Quem corre</mark> cansa.</td><td class="cl ans"><span>Subjetiva</span></td><td class="ans"><span>“Quem corre” é o sujeito de “cansa”.</span></td></tr>
+    <tr><td class="it">bb)</td><td>Combinamos <mark class="hl">que iríamos a Salvador</mark>.</td><td class="cl ans"><span>Objetiva direta</span></td><td class="ans"><span>O sujeito é “nós”: combinamos <i>isso</i>. Compare com y).</span></td></tr>
+    <tr><td class="it">cc)</td><td>Tudo indica <mark class="hl">que os deputados são insensíveis</mark>.</td><td class="cl ans"><span>Objetiva direta</span></td><td class="ans"><span>Sujeito “tudo”; indica <i>isso</i>.</span></td></tr>
+    <tr><td class="it">dd)</td><td>Sabes muito bem <mark class="hl">quanto te amo</mark>.</td><td class="cl ans"><span>Objetiva direta</span></td><td class="ans"><span>Sabes <i>isso</i>; “quanto” indica intensidade.</span></td></tr>
+    <tr><td class="it">ee)</td><td>Não sei <mark class="hl">que livro ler nas férias</mark>.</td><td class="cl ans"><span>Objetiva direta <small>reduzida de infinitivo</small></span></td><td class="ans"><span>Não sei <i>isso</i>; “que” é interrogativo (“Que livro ler?”).</span></td></tr>
+    <tr><td class="it">ff)</td><td>Josué aspirava <mark class="hl">a galgar o posto de chefe</mark>.</td><td class="cl ans"><span>Objetiva indireta <small>reduzida de infinitivo</small></span></td><td class="ans"><span>“Aspirar a” = desejar.</span></td></tr>
+    <tr><td class="it">gg)</td><td>Dependo <mark class="hl">de quem me protege</mark>.</td><td class="cl ans"><span>Objetiva indireta</span></td><td class="ans"><span>“Depender de”.</span></td></tr>
+    <tr><td class="it">hh)</td><td>O seu pedido foi <mark class="hl">que não voltássemos ali</mark>.</td><td class="cl ans"><span>Predicativa</span></td><td class="ans"><span>Sujeito “o seu pedido” + verbo de ligação.</span></td></tr>
+    <tr><td class="it">ii)</td><td>A verdade é <mark class="hl">que o Brasil está fora da Copa</mark>.</td><td class="cl ans"><span>Predicativa</span></td><td class="ans"><span>Igual a q).</span></td></tr>
+    <tr><td class="it">jj)</td><td>A resposta do diretor foi <mark class="hl">mostrar-me a porta</mark>.</td><td class="cl ans"><span>Predicativa <small>reduzida de infinitivo</small></span></td><td class="ans"><span>A resposta foi <i>isso</i>.</span></td></tr>
+    <tr><td class="it">kk)</td><td>O trabalho foi realizado <mark class="hl">por quem entende do assunto</mark>.</td><td class="cl ans"><span>Agente da passiva <small>fora da lista da NGB</small></span></td><td class="ans"><span>Indica quem pratica a ação da voz passiva (ver 3.10).</span></td></tr>
+    <tr><td class="it">ll)</td><td>Mariquinha é amada <mark class="hl">por quantos a conhecem</mark>.</td><td class="cl ans"><span>Agente da passiva <small>fora da lista da NGB</small></span></td><td class="ans"><span>Na ativa: “Quantos a conhecem amam Mariquinha”.</span></td></tr>
+    <tr><td class="it">mm)</td><td>É preciso <mark class="hl">que reconheça ao menos isto</mark>: <mark class="hl">que a moral católica está certa</mark>.</td><td class="cl ans"><span>1ª subjetiva · 2ª apositiva</span></td><td class="ans"><span><i>Isso</i> é preciso; a segunda oração explica “isto”.</span></td></tr>
+    <tr><td class="it">nn)</td><td>Ele tem a mania <mark class="hl">de que alho faz bem à saúde</mark>.</td><td class="cl ans"><span>Completiva nominal</span></td><td class="ans"><span>Completa “mania” (mania <i>de</i>).</span></td></tr>
+    <tr><td class="it">oo)</td><td>Não me esqueço <mark class="hl">de que estava doente</mark>.</td><td class="cl ans"><span>Objetiva indireta</span></td><td class="ans"><span>“Esquecer-se de”.</span></td></tr>
+    <tr><td class="it">pp)</td><td>Respondi-lhe <mark class="hl">que a presença do dono o sossegava um pouco</mark>.</td><td class="cl ans"><span>Objetiva direta</span></td><td class="ans"><span>Responder algo (objeto direto) a alguém (“lhe” = objeto indireto).</span></td></tr>
+  </tbody>
+</table>
+</div>
+<div class="callout tip">
+  <span class="tag tip">Pares que a própria lista monta</span>
+  <ul>
+    <li><b>y) × bb)</b> — mesma oração, funções diferentes: “Ficou combinado” não tem sujeito, então a oração é o sujeito; em “Combinamos”, o sujeito é “nós”, então a oração é o objeto.</li>
+    <li><b>z) × bb)</b> — voz passiva sintética (“combinou-se”) × voz ativa (“combinamos”).</li>
+    <li><b>m) × oo)</b> — verbos pronominais pedem “de”: objetiva indireta.</li>
+    <li><b>o) × nn)</b> — nomes que pedem preposição: completiva nominal.</li>
+    <li><b>q), hh), ii)</b> — sujeito determinado + “ser”: predicativa.</li>
+  </ul>
+</div>
+
+<h3 id="adjetivas"><span class="secnum">3.12</span>Orações adjetivas e pronomes relativos</h3>
+<p>A oração <b>adjetiva</b> tem valor de adjetivo: caracteriza um substantivo (ou pronome) que vem antes dela, o <b>antecedente</b>. Sua função é a de <b>adjunto adnominal</b> desse antecedente. Compare: “Todo homem <b>mentiroso</b>” ≈ “Todo homem <b>que mente</b>”.</p>
+<p>Ela começa com um <b>pronome relativo</b>, que faz dois trabalhos ao mesmo tempo:</p>
+<ol class="steps">
+  <li><b>Retoma o antecedente</b>, evitando repeti-lo: “Todo homem que mente” = todo homem — <i>esse homem mente</i>.</li>
+  <li><b>Exerce uma função dentro da oração adjetiva</b>: em “que mente”, o <i>que</i> (= o homem) é o sujeito de “mente”.</li>
+</ol>
+<div class="an">
+  <span class="seg p"><span class="t">Todo homem</span><span class="l">principal (início) · antecedente</span></span>
+  <span class="seg a"><span class="t">que mente</span><span class="l">adjetiva · “que” = o homem (sujeito)</span></span>
+  <span class="seg p"><span class="t">é indigno de confiança.</span><span class="l">principal (fim)</span></span>
+  <p class="note">A adjetiva costuma ficar “encaixada” no meio da principal, logo depois do antecedente.</p>
+</div>
+<div class="callout tip">
+  <span class="tag tip">Teste do relativo</span>
+  <p>Troque o <i>que</i> por <b>o qual, a qual, os quais</b> ou <b>as quais</b>, concordando com o antecedente. Se couber — mesmo soando pesado —, é pronome relativo, e a oração é adjetiva: “Todo homem <i>o qual</i> mente…” ✓. Se não couber, não é relativo: “É importante <i>o qual</i> todos estudem” ✗ — ali o <i>que</i> é conjunção integrante.</p>
+</div>
+<h4>Os pronomes relativos</h4>
+<p class="scroll-hint">↔ deslize a tabela para o lado</p>
+<div class="tbl">
+<table>
+  <thead><tr><th>Pronome</th><th>Uso</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td class="cl">que</td><td>O mais comum; invariável; retoma pessoa ou coisa.</td><td>Todo homem <mark class="hl-a">que mente</mark>… <span class="muted">(apostila)</span></td></tr>
+    <tr><td class="cl">o qual, a qual, os quais, as quais</td><td>Variáveis; úteis depois de preposição longa e para evitar ambiguidade.</td><td>O projeto <mark class="hl-a">sobre o qual falamos</mark>… <span class="muted">(criado)</span></td></tr>
+    <tr><td class="cl">quem</td><td>Só para pessoas; com antecedente, vem sempre depois de preposição.</td><td>O amigo <mark class="hl-a">a quem devo favores</mark>… <span class="muted">(criado)</span> — sem antecedente, ver <a href="#casos-especiais">3.10</a>.</td></tr>
+    <tr><td class="cl">cujo, cuja, cujos, cujas</td><td>Ideia de posse; fica entre o possuidor e a coisa possuída e concorda com a coisa possuída; nunca leva artigo depois (“cujo o” é erro).</td><td>“Os sentidos são sensores <mark class="hl-a">cujo desígnio é perceber</mark>…” <span class="muted">(texto da questão 01)</span> = sensores, o desígnio dos quais é perceber.</td></tr>
+    <tr><td class="cl">onde</td><td>Lugar (= em que, no qual).</td><td>A cidade <mark class="hl-a">onde nasci</mark>… <span class="muted">(criado)</span></td></tr>
+    <tr><td class="cl">quanto, quantos</td><td>Depois de <i>tudo, todos, tanto</i>.</td><td>Leu tudo <mark class="hl-a">quanto encontrou</mark>. <span class="muted">(criado)</span></td></tr>
+  </tbody>
+</table>
+</div>
+<h4>A preposição vai antes do relativo</h4>
+<p>Quando o verbo (ou nome) da oração adjetiva pede preposição, ela vai para antes do relativo. O material mostra isso duas vezes: “A doença <b>de que</b> nosso amigo morreu” (morrer <i>de</i> uma doença) e “a radiação … <b>de que</b> estamos rodeados” (rodeado <i>de</i>, no texto da questão 01).</p>
+<div class="callout plus">
+  <span class="tag plus">Complemento para melhor compreensão</span>
+  <p>Na fala, é comum apagar essa preposição (“o filme que eu gosto”, “a doença que ele morreu”). Na escrita formal e nos vestibulares, a forma esperada mantém a preposição: “o filme <b>de que</b> eu gosto”, “a doença <b>de que</b> ele morreu”.</p>
+</div>
+
+<h3 id="restritiva-explicativa"><span class="secnum">3.13</span>Restritiva × explicativa: a vírgula que muda o sentido</h3>
+<p>A apostila apresenta o assunto com dois pares de frases, e as suas anotações já registram a ideia central.</p>
+<h4>Par I — “Restringir” × “Generalizar”</h4>
+<div class="an">
+  <span class="seg p"><span class="t">Todo homem</span><span class="l">principal · antecedente</span></span>
+  <span class="seg a"><span class="t">que mente</span><span class="l">adjetiva restritiva</span></span>
+  <span class="seg p"><span class="t">é indigno de confiança.</span><span class="l">principal</span></span>
+  <p class="note">Sua anotação: <b>“Restringir”</b>. Do conjunto dos homens, a oração separa os que mentem; só esses são indignos de confiança.</p>
+</div>
+<div class="an">
+  <span class="seg p"><span class="t">Todo homem,</span><span class="l">principal · antecedente</span></span>
+  <span class="seg a"><span class="t">que mente,</span><span class="l">adjetiva explicativa</span></span>
+  <span class="seg p"><span class="t">é indigno de confiança.</span><span class="l">principal</span></span>
+  <p class="note">Sua anotação: <b>“Generalizar”</b>. A oração atribui a mentira a todos os homens. A frase afirma duas coisas: todo homem mente, e todo homem é indigno de confiança.</p>
+</div>
+<h4>Par II — “Pressuposto: +1” × “Explicativa: 1”</h4>
+<p>“A doença de que nosso amigo morreu inicialmente parecia sem gravidade.” Você acrescentou as vírgulas à mão e anotou “Explicativa: 1”, “Restritiva → Pressuposto: +1” e “Individual”. Lendo as duas versões:</p>
+<div class="grid2">
+  <div class="card r"><p class="lab">Sem vírgulas · restritiva</p><p>“A doença <mark class="hl-a">de que nosso amigo morreu</mark> inicialmente parecia sem gravidade.”</p><p><b>Pressuposto: +1.</b> O amigo teve mais de uma doença; a oração aponta qual delas — a que o matou.</p></div>
+  <div class="card e"><p class="lab">Com vírgulas · explicativa</p><p>“A doença, <mark class="hl-a">de que nosso amigo morreu</mark>, inicialmente parecia sem gravidade.”</p><p><b>1 · individual.</b> A doença já está identificada; a oração só acrescenta que ele morreu dela.</p></div>
+</div>
+<div class="callout def" id="tipos-adjetivas">
+  <span class="tag def">Definição — para completar a sua folha (“Tipos de adjetivas”)</span>
+  <p><b>Restritiva:</b> delimita o sentido do antecedente, referindo-se só a uma parte do conjunto; não vem separada por vírgulas e não pode ser retirada sem mudar o sentido; pressupõe que existem outros elementos, sem aquela característica.</p>
+  <p><b>Explicativa:</b> acrescenta ao antecedente uma informação que vale para ele inteiro (generaliza); vem entre vírgulas (ou travessões, ou parênteses) e pode ser retirada sem mudar a identificação do antecedente; funciona de modo parecido com um aposto.</p>
+</div>
+<p class="scroll-hint">↔ deslize a tabela para o lado</p>
+<div class="tbl">
+<table>
+  <thead><tr><th>Critério</th><th>Restritiva</th><th>Explicativa</th></tr></thead>
+  <tbody>
+    <tr><td class="cl">Pontuação</td><td>sem vírgulas</td><td>entre vírgulas (ou travessões, parênteses)</td></tr>
+    <tr><td class="cl">O que faz</td><td>seleciona uma parte do conjunto</td><td>comenta o conjunto inteiro</td></tr>
+    <tr><td class="cl">Paráfrase que funciona</td><td>“<b>somente</b> os X que…”</td><td>“os X — <b>todos</b> eles — …”</td></tr>
+    <tr><td class="cl">Pressuposto</td><td>existem outros X sem a característica (+1)</td><td>não há outros: a informação vale para todos (1)</td></tr>
+    <tr><td class="cl">Se for retirada</td><td>o sentido da frase muda</td><td>a referência do antecedente continua a mesma</td></tr>
+    <tr><td class="cl">Antecedente típico</td><td>nome comum que precisa ser especificado</td><td>nome próprio, ser único, termo já determinado</td></tr>
+    <tr><td class="cl">Na sua folha</td><td>“Restringir” · “Pressuposto: +1”</td><td>“Generalizar” · “Explicativa: 1” · “Individual”</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Quando o antecedente é um <b>nome próprio</b> ou um <b>ser único</b>, a oração é explicativa: não existe um grupo do qual selecionar. É o caso da questão 06: “Moisés, que também contou a sua morte, …” — há um só Moisés em questão. Outro exemplo (criado): “O Sol, que é uma estrela, …”.</p>
+<h4>Como escrever a resposta numa questão de “diferença de sentido”</h4>
+<div class="model">Em (a), <b>com vírgulas</b>, a oração adjetiva é <b>explicativa</b>: a característica vale para <b>todos</b> os [antecedente] — [paráfrase com “todos”]. Em (b), <b>sem vírgulas</b>, a oração é <b>restritiva</b>: <b>somente</b> os [antecedente] que [característica] [predicado], o que <b>pressupõe</b> a existência de [antecedente] que não [característica].</div>
+<div class="callout trap">
+  <span class="tag trap">Pegadinha — vírgula sozinha</span>
+  <p>No meio da frase, a explicativa precisa de <b>duas vírgulas</b>: uma antes e outra depois. Com uma só, a vírgula passa a separar sujeito e verbo — erro de pontuação — e a oração continua restritiva. Foi o que aconteceu na sua resposta da <a href="#q05">questão 05a</a>.</p>
+</div>
+<div class="callout warn">
+  <span class="tag warn">Atenção à interpretação</span>
+  <p>“Pode ser retirada” não significa “sem importância”. Na <a href="#q12">questão 12</a>, a explicativa traz a informação central do trecho (todos os negros viviam segregados). O que não muda ao retirá-la é a <i>identificação</i> do antecedente, não a força do texto.</p>
+</div>
+
+<h3 id="que"><span class="secnum">3.14</span>O “que” decisivo: integrante, relativo e os outros</h3>
+<p>A palavra <i>que</i> exerce papéis diferentes, e quase todos aparecem no seu material. Identificar o tipo de “que” costuma resolver a questão sozinho.</p>
+<p class="scroll-hint">↔ deslize a tabela para o lado</p>
+<div class="tbl">
+<table>
+  <thead><tr><th>Tipo de “que”</th><th>Como reconhecer</th><th>Exemplo do material</th></tr></thead>
+  <tbody>
+    <tr><td class="cl">Pronome relativo <small>→ oração adjetiva</small></td><td>Retoma um antecedente; troca por <i>o qual</i>; tem função dentro da oração.</td><td>“protestos <b>que</b> fizeram pelas ruas de Atenas” (07); “a mata <b>que</b> havia” (14)</td></tr>
+    <tr><td class="cl">Conjunção integrante <small>→ oração substantiva</small></td><td>Sem antecedente; a oração inteira troca por <i>isso</i>; tirando o “que”, sobra oração completa.</td><td>“Dizem <b>que</b> ele vem”; “É importante <b>que</b> todos estudem”</td></tr>
+    <tr><td class="cl">Pronome interrogativo <small>→ substantiva (pergunta indireta)</small></td><td>Dá para transformar em pergunta direta.</td><td>“Não sei <b>que</b> livro ler nas férias” (ee)</td></tr>
+    <tr><td class="cl">Conjunção consecutiva <small>→ oração adverbial</small></td><td>Vem depois de intensificador (<i>tão, tal, tanto</i>) e indica consequência.</td><td>“está <b>tão</b> grande <b>que</b> não é mais possível vencê-la” (07c)</td></tr>
+    <tr><td class="cl">Expletivo, de realce <small>(“é que”)</small></td><td>Pode ser retirado sem prejuízo; o “é” fica invariável.</td><td>“Tais fatores … <b>é que</b> impulsionam o pioneirismo” (04c)</td></tr>
+  </tbody>
+</table>
+</div>
+<h4>Teste em quatro perguntas</h4>
+<ol class="steps">
+  <li>Ele retoma uma palavra anterior e cabe “o qual”? → <b>pronome relativo</b> (oração adjetiva).</li>
+  <li>A oração inteira cabe no lugar de “isso”? → <b>conjunção integrante</b> (oração substantiva).</li>
+  <li>Há <i>tão, tal</i> ou <i>tanto</i> antes, com ideia de consequência? → <b>consecutiva</b> (oração adverbial).</li>
+  <li>Dá para apagar o “é que” e a frase continua inteira? → <b>expletivo</b> (não é pronome nem introduz oração).</li>
+</ol>
+
+<h3 id="adverbiais"><span class="secnum">3.15</span>Adverbiais: só o necessário</h3>
+<div class="callout src">
+  <span class="tag src">Na apostila</span>
+  <p>Adverbiais: expressam circunstâncias, função própria dos advérbios.</p>
+</div>
+<p>As fotos não desenvolvem as adverbiais; elas aparecem nas alternativas das questões 01 e 07. Para descartá-las, basta reconhecer que funcionam como <b>adjunto adverbial</b> — indicam tempo, causa, condição, finalidade, consequência etc. Duas aparecem no material:</p>
+<ul>
+  <li><b>Final</b> — “<mark class="hl-v">Para vencer a crise</mark>, será preciso gastar menos…” (07d): indica finalidade (= para que se vença a crise); é reduzida de infinitivo.</li>
+  <li><b>Consecutiva</b> — “…a bola de neve está tão grande <mark class="hl-v">que não é mais possível vencê-la</mark>…” (07c): indica a consequência de “tão grande”.</li>
+</ul>
+<div class="callout plus">
+  <span class="tag plus">Complemento para melhor compreensão</span>
+  <p>Os demais tipos de adverbiais (causais, condicionais, concessivas, temporais…) ficam para a parte seguinte da apostila, que não estava nas fotos.</p>
+</div>
+
+<h3 id="exercicios"><span class="secnum">3.16</span>Exercícios de Fixação 01–14, resolvidos</h3>
+<p>Cada questão traz o enunciado em resumo (os textos longos estão na apostila), a resolução passo a passo, o gabarito oficial da própria apostila e o que está anotado na sua folha. No <a href="#kit-diagnostico">kit de revisão</a> há um diagnóstico com o placar completo.</p>
+
+<article class="ex" id="q01">
+  <div class="ex-head"><span class="n">01</span><span class="banca">Texto de Lucia Santaella · “Os cinco sentidos”</span><span class="pill ok">Sua folha: d ✓</span></div>
+  <div class="ex-body">
+    <h4>Enunciado (resumo)</h4>
+    <p>Quanto à organização sintática, o 2º parágrafo do texto é formado basicamente por orações principais seguidas de orações: a) substantivas e adverbiais; b) adjetivas e adverbiais; c) adverbiais; d) adjetivas; e) substantivas.</p>
+    <h4>Resolução</h4>
+    <ol class="steps">
+      <li>Procure os conectivos do 2º parágrafo: sensores <b>cujo</b> desígnio é perceber…; a radiação <b>de que</b> estamos rodeados; fenômenos <b>que</b> dependem de deformações mecânicas; ondas sonoras <b>que</b> se formam…; variações <b>que</b> podem ser captadas…; deformações <b>que</b> produzem em certas membranas; moléculas <b>que</b> se desprendem das substâncias; os cinco sentidos <b>que</b> foram estabelecidos por Aristóteles.</li>
+      <li>Aplique o teste do relativo: todos retomam um antecedente (sensores, radiação, fenômenos, ondas, variações, deformações, moléculas, sentidos) e aceitam “o qual/os quais/as quais”; “cujo” é relativo por definição.</li>
+      <li>Nenhum “que” do parágrafo é conjunção integrante ou adverbial: a estrutura que se repete é principal + adjetiva.</li>
+    </ol>
+    <p>Gabarito oficial: <span class="gab">d</span></p>
+    <div class="callout plus">
+      <span class="tag plus">Complemento para melhor compreensão</span>
+      <p>O “basicamente” do enunciado importa: dentro de uma adjetiva há uma reduzida de outro tipo (“cujo desígnio é <i>perceber cada tipo distinto de informação</i>” — predicativa de “desígnio”), e “baseadas em diferentes fenômenos” equivale a uma adjetiva reduzida (“que se baseiam…”). Ainda assim, o padrão do parágrafo é o das adjetivas.</p>
+    </div>
+    <div class="callout fix">
+      <span class="tag fix">Correção necessária · fora da gramática</span>
+      <p>Como transcrito na apostila, o texto fala em “radiação magnética”; em Física, a luz faz parte da radiação <b>eletromagnética</b>. Isso não afeta a questão.</p>
+    </div>
+  </div>
+</article>
+
+<article class="ex" id="q02">
+  <div class="ex-head"><span class="n">02</span><span class="banca">Fuvest</span><span class="pill ok">Sua folha: ✓</span></div>
+  <div class="ex-body">
+    <h4>Enunciado</h4>
+    <p>Explique a diferença de sentido entre: a) “Os homens, que têm seu preço, são facilmente corrompidos.” b) “Os homens que têm seu preço são facilmente corrompidos.”</p>
+    <h4>Resolução</h4>
+    <ol class="steps">
+      <li>Antecedente das duas orações: “os homens”.</li>
+      <li>Em (a), a oração está entre vírgulas → <b>explicativa</b>: a característica vale para todos.</li>
+      <li>Em (b), sem vírgulas → <b>restritiva</b>: seleciona uma parte do grupo e cria um pressuposto.</li>
+    </ol>
+    <div class="model"><b>Resposta-modelo:</b> Em (a), a oração é explicativa: todos os homens têm seu preço e, por isso, todos são facilmente corrompidos. Em (b), é restritiva: somente os homens que têm seu preço são facilmente corrompidos — o que pressupõe que há homens sem preço.</div>
+    <p>Gabarito oficial: <span class="gab">a) todos os homens são facilmente corrompidos, pois todos têm seu preço; b) somente os que têm um preço são facilmente corrompidos</span></p>
+    <h4>Na sua folha</h4>
+    <p>Sua resposta acerta o ponto central (“todos” × “apenas uma parcela”). Numa prova discursiva, ganhe precisão nomeando os tipos de oração (explicativa e restritiva) e o pressuposto.</p>
+  </div>
+</article>
+
+<article class="ex" id="q03">
+  <div class="ex-head"><span class="n">03</span><span class="banca">Univan</span><span class="pill ok">Sua folha: ✓</span></div>
+  <div class="ex-body">
+    <h4>Enunciado</h4>
+    <p>Explique a diferença de sentido: a) “O carro de Hermengarda, que foi comprado em 1982, está em ótimas condições.” b) “O carro de Hermengarda que foi comprado em 1982 está em ótimas condições.”</p>
+    <h4>Resolução</h4>
+    <p>Em (a), a explicativa trata “o carro de Hermengarda” como algo já identificado: ela tem <b>um carro só</b>, e a informação sobre 1982 é um acréscimo. Em (b), a restritiva especifica <b>qual</b> dos carros: pressupõe que Hermengarda tem <b>mais de um</b> e fala apenas do comprado em 1982 — é o “+1” da sua anotação.</p>
+    <p>Gabarito oficial: <span class="gab">a) ela tem apenas um carro; b) ela tem mais de um carro, e comenta-se o comprado em 1982</span></p>
+    <h4>Na sua folha</h4>
+    <p>Correta: você explicou que a especificação faz entender que Hermengarda tem mais de um carro, e que a não especificação indica um carro só.</p>
+  </div>
+</article>
+
+<article class="ex" id="q04">
+  <div class="ex-head"><span class="n">04</span><span class="banca">ITA</span><span class="pill no">Sua folha: b ✗ · gabarito c</span></div>
+  <div class="ex-body">
+    <h4>Enunciado</h4>
+    <p>Assinale a opção em que a palavra <i>que</i> não funcione como pronome.</p>
+    <ul class="alts">
+      <li><span class="lt">a)</span>“A loja que vende as grifes mais famosas e caras do mundo”<span class="why">Pronome relativo: = a qual; sujeito de “vende”.</span></li>
+      <li><span class="lt">b)</span>“Os mesmos que, ao se aventurar na antiga loja reclamavam da indiferença das vendedoras”<span class="why">Pronome relativo: retoma “os mesmos” (= aqueles); = os quais; sujeito de “reclamavam”.</span></li>
+      <li class="right"><span class="lt">c)</span>“Tais fatores, digamos assim, sinistros da realidade brasileira é que impulsionam o pioneirismo da nova Daslu”<span class="why">Expletivo: apague o “é que” e a frase continua perfeita — “Tais fatores (…) impulsionam o pioneirismo da nova Daslu”. Repare que o “é” nem concorda com “fatores”: é uma expressão fixa de realce.</span></li>
+      <li><span class="lt">d)</span>“A Daslu, que desenvolveu no Brasil um certo tipo de atendimento exclusivo e personalizado para ricos”<span class="why">Pronome relativo: = a qual; sujeito de “desenvolveu” (oração explicativa).</span></li>
+      <li><span class="lt">e)</span>“A presença dos numerosos pobres e miseráveis, que, por sua vez, ocuparam as praças públicas”<span class="why">Pronome relativo: = os quais; sujeito de “ocuparam” (oração explicativa).</span></li>
+    </ul>
+    <p>Gabarito oficial: <span class="gab">c</span></p>
+    <div class="callout trap">
+      <span class="tag trap">Por que a b engana</span>
+      <p>“Os mesmos” não parece um antecedente típico (não é um substantivo comum), e o trecho intercalado “ao se aventurar na antiga loja” afasta o <i>que</i> do verbo “reclamavam”. Mas “os mesmos” funciona como pronome (= aqueles), e o <i>que</i> é o sujeito de “reclamavam”: dá para dizer “os mesmos <i>os quais</i> (…) reclamavam”. Na c), o teste decisivo é apagar o “é que” — se a frase sobrevive inteira, ele não tinha função.</p>
+    </div>
+  </div>
+</article>
+
+<article class="ex" id="q05">
+  <div class="ex-head"><span class="n">05</span><span class="banca">Fuvest</span><span class="pill no">Sua folha: a ✗ · b ✓</span></div>
+  <div class="ex-body">
+    <h4>Enunciado</h4>
+    <p>“Os meninos de rua que procuram trabalho são repelidos pela população.” a) Reescreva a frase, alterando-lhe o sentido apenas com o emprego de vírgulas. b) Explique a alteração de sentido ocorrida.</p>
+    <h4>Resolução</h4>
+    <p><b>a)</b> “Os meninos de rua<b>,</b> que procuram trabalho<b>,</b> são repelidos pela população.”</p>
+    <p><b>b)</b> Na frase original, a oração é <b>restritiva</b>: só os meninos de rua que procuram trabalho são repelidos — o que pressupõe meninos de rua que não procuram trabalho. Na reescrita, ela é <b>explicativa</b>: todos os meninos de rua procuram trabalho, e todos são repelidos.</p>
+    <p>Gabarito oficial: <span class="gab">a) oração “que procuram trabalho” entre vírgulas; b) antes, só os que procuravam trabalho eram repelidos; agora, todos são</span></p>
+    <div class="callout warn">
+      <span class="tag warn">Atenção à interpretação</span>
+      <p>No gabarito impresso, a resposta do item a aparece truncada (“que procuram trabalho,;”). A leitura segura é a da resolução acima: a oração isolada entre vírgulas.</p>
+    </div>
+    <div class="callout fix">
+      <span class="tag fix">Correção necessária · na sua resposta</span>
+      <p>Você escreveu “Os meninos de rua que procuram trabalho, são repelidos pela população.” — com uma vírgula só, depois de “trabalho”. Assim, ela separa o sujeito (“Os meninos de rua que procuram trabalho”) do verbo (“são”), o que é erro de pontuação, e a oração continua restritiva. No meio da frase, a explicativa exige o par: uma vírgula antes de “que” e outra depois de “trabalho”. Seu item b está correto.</p>
+    </div>
+  </div>
+</article>
+
+<article class="ex" id="q06">
+  <div class="ex-head"><span class="n">06</span><span class="banca">Machado de Assis · Memórias Póstumas de Brás Cubas</span><span class="pill blank">Sua folha: em branco</span></div>
+  <div class="ex-body">
+    <h4>Enunciado (resumo)</h4>
+    <p>No capítulo I do romance, lê-se: “Moisés, que também contou a sua morte, não a pôs no introito, mas no cabo.” O contexto mostra que o narrador se refere ao Moisés bíblico, autor dos cinco livros iniciais do Antigo Testamento. Explique por que a oração adjetiva que se refere a Moisés é explicativa.</p>
+    <h4>Resolução</h4>
+    <ol class="steps">
+      <li>Antecedente: “Moisés” — nome próprio que, no contexto, aponta para um único indivíduo.</li>
+      <li>A oração não seleciona um Moisés entre vários; só acrescenta uma informação sobre ele.</li>
+      <li>Sem vírgulas, viraria restritiva e sugeriria que existe mais de um Moisés, do qual se escolheria “o que contou a sua morte”.</li>
+    </ol>
+    <div class="model"><b>Resposta-modelo:</b> A oração é explicativa porque “Moisés” designa, no contexto, um único indivíduo — o personagem bíblico a quem se atribuem os cinco primeiros livros da Bíblia. Ela não restringe o nome a um entre vários Moisés; apenas acrescenta uma informação sobre ele (ter também narrado a própria morte). Sem as vírgulas, a frase daria a entender que há mais de um Moisés.</div>
+    <p>Gabarito oficial: <span class="gab">sem as vírgulas, daria a entender que há mais de um Moisés com as mesmas características</span></p>
+    <div class="callout plus">
+      <span class="tag plus">Complemento para melhor compreensão · Literatura</span>
+      <p>“Introito” é o começo; “cabo”, o fim. Brás Cubas, o “defunto autor”, abre o livro pela própria morte; Moisés teria narrado a sua no fim — a morte de Moisés aparece no último capítulo do Deuteronômio, o quinto livro do Pentateuco. É uma ironia do narrador, que se compara ao autor tradicionalmente atribuído aos livros sagrados; no romance, a frase segue apontando essa diferença entre o livro de Brás e o Pentateuco.</p>
+    </div>
+  </div>
+</article>
+
+<article class="ex" id="q07">
+  <div class="ex-head"><span class="n">07</span><span class="banca">Insper</span><span class="pill ok">Sua folha: b ✓</span></div>
+  <div class="ex-body">
+    <h4>Enunciado</h4>
+    <p>No período “…nos inúmeros protestos que fizeram pelas ruas de Atenas…”, a oração grifada tem a mesma função sintática que a destacada em:</p>
+    <h4>Resolução</h4>
+    <ol class="steps">
+      <li>Classifique primeiro a oração do enunciado: “que fizeram pelas ruas de Atenas” retoma “protestos” (que = os quais, objeto direto de “fizeram”) → <b>adjetiva restritiva</b>, com função de <b>adjunto adnominal</b>. Sua anotação “R” acima dela confirma.</li>
+      <li>Procure, nas alternativas, outra oração adjetiva.</li>
+    </ol>
+    <ul class="alts">
+      <li><span class="lt">a)</span>“…confirmou, ontem, que o país vai adotar medidas…”<span class="why">Objetiva direta: confirmou <i>isso</i>.</span></li>
+      <li class="right"><span class="lt">b)</span>“…para a próxima vez que receber o mesmo salário.”<span class="why">“Que” = em que (na qual): retoma “vez” → adjetiva restritiva, adjunto adnominal de “vez”. Mesma função.</span></li>
+      <li><span class="lt">c)</span>“…está tão grande que não é mais possível vencê-la…”<span class="why">Adverbial consecutiva (tão… que).</span></li>
+      <li><span class="lt">d)</span>“Para vencer a crise, será preciso gastar menos…”<span class="why">“Para vencer a crise”: adverbial final; “gastar menos…”: subjetiva reduzida (será preciso <i>isso</i>).</span></li>
+      <li><span class="lt">e)</span>“Para sair da crise, os gregos precisam acelerar…”<span class="why">“Para sair da crise”: adverbial final; “acelerar o ritmo…” completa “precisam”.</span></li>
+    </ul>
+    <p>Gabarito oficial: <span class="gab">b</span></p>
+    <div class="callout warn">
+      <span class="tag warn">Atenção à interpretação</span>
+      <p>Na cópia, o destaque de cada alternativa não aparece. A análise considerou todas as orações possíveis em cada uma; como só a b) contém oração adjetiva, a conclusão não depende de saber qual trecho estava destacado.</p>
+    </div>
+  </div>
+</article>
+
+<article class="ex" id="q08">
+  <div class="ex-head"><span class="n">08</span><span class="banca">Insper</span><span class="pill ok">Sua folha: a ✓</span></div>
+  <div class="ex-body">
+    <h4>Enunciado</h4>
+    <p>Compare: I. “Os investidores que temiam ser vítimas da crise global financeira abandonaram o mercado de ações.” II. “Os investidores, que temiam ser vítimas da crise global financeira, abandonaram o mercado de ações.” A respeito das vírgulas, é correto afirmar:</p>
+    <ul class="alts">
+      <li class="right"><span class="lt">a)</span>Em I, a ausência de vírgulas cria o pressuposto de que ainda há pessoas investindo na Bolsa.<span class="why">Correta: só os que temiam abandonaram; logo, houve investidores que não temiam e continuaram.</span></li>
+      <li><span class="lt">b)</span>Em II, as vírgulas indicam que somente alguns temiam…<span class="why">Inverte tudo: em II, todos temiam.</span></li>
+      <li><span class="lt">c)</span>As vírgulas têm apenas a função de demarcar pausas.<span class="why">Errada: elas mudam o sentido.</span></li>
+      <li><span class="lt">d)</span>Em I, subentende-se que todos os investidores deixaram de aplicar…<span class="why">Esse é o sentido de II, não de I.</span></li>
+      <li><span class="lt">e)</span>Em II, as vírgulas destacam a ideia de restrição…<span class="why">Destacam explicação (generalização), não restrição.</span></li>
+    </ul>
+    <p>Gabarito oficial: <span class="gab">a</span></p>
+  </div>
+</article>
+
+<article class="ex" id="q09">
+  <div class="ex-head"><span class="n">09</span><span class="banca">Unesp</span><span class="pill ok">Sua folha: “Animadores” ✓</span></div>
+  <div class="ex-body">
+    <h4>Enunciado (resumo)</h4>
+    <p>Texto de um médico, da década de 1970, sobre o tratamento da tuberculose. O fragmento sustenta que há mudanças significativas na forma de tratar a doença. Aponte uma expressão do 2º parágrafo em que o adjetivo exprima claramente essa modificação, esclarecendo-a.</p>
+    <h4>Resolução</h4>
+    <p>O 2º parágrafo diz que as pesquisas seguem dois sentidos — a duração do tratamento e o uso intermitente dos medicamentos — e conclui que os resultados obtidos até então são <b>animadores</b>. O adjetivo avalia positivamente essas novas linhas de pesquisa.</p>
+    <div class="model"><b>Resposta-modelo:</b> A expressão é “Os resultados obtidos até agora são animadores”. O adjetivo indica que as pesquisas sobre a redução da duração do tratamento e o uso intermitente de medicamentos estão dando resultados positivos — a mudança na forma de tratar a tuberculose é para melhor.</div>
+    <p>Gabarito oficial: <span class="gab">animadores</span></p>
+    <h4>Na sua folha</h4>
+    <p>Adjetivo certo. O enunciado também pede “esclarecendo-a”: numa prova, acrescente a explicação do que mudou.</p>
+    <p class="muted">Por que esta questão está numa apostila de orações? Porque a oração adjetiva tem valor de adjetivo — e adjetivos carregam a avaliação de quem escreve. As questões 09 e 10 treinam essa leitura.</p>
+  </div>
+</article>
+
+<article class="ex" id="q10">
+  <div class="ex-head"><span class="n">10</span><span class="banca">Unesp</span><span class="pill ok">Sua folha: ✓</span></div>
+  <div class="ex-body">
+    <h4>Enunciado (resumo)</h4>
+    <p>Fragmento da revista <i>Veja</i> (2004) sobre <i>O Código Da Vinci</i> e Leonardo da Vinci. a) O ponto de vista do enunciador é favorável ou desfavorável ao tema? b) Destaque três adjetivos que ilustrem esse ponto de vista.</p>
+    <h4>Resolução</h4>
+    <p><b>a)</b> Favorável: o texto elogia o romance e o personagem.</p>
+    <p><b>b)</b> Adjetivos de avaliação positiva: trama <b>envolvente</b>, um <b>engenhoso</b> apanhado, o <b>inesgotável</b> interesse, versatilidade <b>espantosa</b> (há ainda o superlativo “o melhor”).</p>
+    <p>Gabarito oficial: <span class="gab">a) favorável; b) envolvente, engenhoso; dedicadas, espantosa</span></p>
+    <div class="callout warn">
+      <span class="tag warn">Atenção à interpretação</span>
+      <p>O gabarito inclui “dedicadas” (“páginas dedicadas a esse personagem”), mas esse adjetivo descreve, não avalia. Como prova do ponto de vista, “inesgotável” e “espantosa” são escolhas mais seguras.</p>
+    </div>
+    <h4>Na sua folha</h4>
+    <p>a) “Favorável” ✓. b) “envolvente, engenhoso, dedicados, espantosa” ✓ — no texto, a forma é “dedicadas” (concorda com “páginas”), e a questão pede três.</p>
+  </div>
+</article>
+
+<article class="ex" id="q11">
+  <div class="ex-head"><span class="n">11</span><span class="banca">Univan</span><span class="pill blank">Sua folha: em branco</span></div>
+  <div class="ex-body">
+    <h4>Enunciado (resumo)</h4>
+    <p>Trecho de Biologia sobre a reprodução ovípara. Explique o sentido dos trechos sublinhados, considerando que são orações adjetivas: (1) “células diploides <mark class="hl-a">que se desenvolvem como novos organismos</mark>” e (2) “casca calcárea, <mark class="hl-a">que é produzida pelo organismo materno</mark>”.</p>
+    <h4>Resolução</h4>
+    <ol class="steps">
+      <li><b>(1)</b> Sem vírgulas → <b>restritiva</b>: nem todas as células diploides se desenvolvem como novos organismos; a oração especifica quais (os zigotos). As demais células diploides do corpo não se desenvolvem assim.</li>
+      <li><b>(2)</b> Com vírgula → <b>explicativa</b>: a informação vale para toda casca calcárea mencionada — ela é produzida pelo organismo materno.</li>
+    </ol>
+    <div class="model"><b>Resposta-modelo:</b> Em (1), a oração é restritiva: não são todas as células diploides que se desenvolvem como novos organismos, apenas algumas (os zigotos). Em (2), é explicativa: toda casca calcárea que envolve esses embriões é produzida pelo organismo materno.</div>
+    <p>Gabarito oficial: <span class="gab">nem todas as células diploides se desenvolvem como organismos; toda casca calcárea que envolve o embrião é produzida pelo organismo materno</span></p>
+    <div class="callout trap">
+      <span class="tag trap">Pegadinha</span>
+      <p>Os parênteses de “(células diploides que se desenvolvem como novos organismos)” pertencem ao <b>aposto</b> que explica “zigotos” — não marcam uma explicativa. Dentro do aposto, a adjetiva vem sem vírgulas: é restritiva. Repare também em “Os embriões que são mantidos durante o desenvolvimento no organismo materno”: outra restritiva (nem todos os embriões ficam no organismo materno).</p>
+    </div>
+    <div class="callout fix">
+      <span class="tag fix">Correção necessária · fora da gramática</span>
+      <p>No texto da questão aparece “bláscula”; o termo da Biologia é <b>blástula</b> (mórula → blástula → gástrula).</p>
+    </div>
+  </div>
+</article>
+
+<article class="ex" id="q12">
+  <div class="ex-head"><span class="n">12</span><span class="banca">Univan</span><span class="pill ok">Sua folha: ✓</span></div>
+  <div class="ex-body">
+    <h4>Enunciado (resumo)</h4>
+    <p>Trecho de reportagem: a África do Sul tem três capitais (Legislativo na Cidade do Cabo, Judiciário em Bloemfontein, Executivo em Pretória), e a descentralização teria ocorrido para dificultar a tomada de poder “pelos negros, que viviam segregados”. Encontre a oração adjetiva, reescreva-a, diga de que tipo é e que sentido expressa.</p>
+    <h4>Resolução</h4>
+    <p>Oração: “<mark class="hl-a">que viviam segregados</mark>”, ligada a “negros”. Separada por vírgula → <b>explicativa</b>. Sentido: generalização — <b>todos</b> os negros viviam segregados.</p>
+    <p>Gabarito oficial: <span class="gab">“que viviam segregados” — explicativa; todos os negros viviam segregados</span></p>
+    <h4>Na sua folha</h4>
+    <p>Completa: você reescreveu, classificou como explicativa e explicou o sentido de generalização.</p>
+    <div class="callout warn">
+      <span class="tag warn">Atenção à interpretação · História</span>
+      <p>A explicação da reportagem para as três capitais é discutível. O registro histórico usual é que a divisão foi um acordo firmado na criação da União Sul-Africana, em 1910 (Cidade do Cabo, legislativa; Bloemfontein, judiciária; Pretória, administrativa) — décadas antes do apartheid, instituído a partir de 1948. Isso não muda a resposta, que avalia só a leitura da oração. Fonte: South African History Online (ver <a href="#fontes">fontes</a>).</p>
+    </div>
+  </div>
+</article>
+
+<article class="ex" id="q13">
+  <div class="ex-head"><span class="n">13</span><span class="banca">Univan</span><span class="pill ok">Sua folha: e ✓</span></div>
+  <div class="ex-body">
+    <h4>Enunciado</h4>
+    <p>“Todos os tubos sonoros que são fechados produzem harmônicos ímpares.” I. Pode-se afirmar que todos os tubos sonoros, que são fechados, produzem harmônicos ímpares. II. Pode-se afirmar que todos os tubos fechados produzem harmônicos ímpares. III. Pode-se afirmar que não são todos os tubos sonoros que produzem harmônicos ímpares. Está correto apenas o que se afirma em: a) I; b) I e II; c) II e III; d) I e III; e) III.</p>
+    <h4>Resolução</h4>
+    <ul class="alts">
+      <li><span class="lt">I ✗</span>Com vírgulas, a oração vira explicativa e passaria a afirmar que todos os tubos sonoros são fechados — sentido diferente do original.</li>
+      <li><span class="lt">II ✗</span>Parece equivalente, mas troca “tubos sonoros que são fechados” por “tubos fechados”, ampliando a afirmação para qualquer tubo fechado.</li>
+      <li class="right"><span class="lt">III ✓</span>A restritiva atribui a propriedade a um subgrupo (os fechados); daí se conclui que a afirmação não vale para todos os tubos sonoros.</li>
+    </ul>
+    <p>Gabarito oficial: <span class="gab">e</span></p>
+    <div class="callout warn">
+      <span class="tag warn">Atenção à interpretação</span>
+      <p>A rejeição de II depende de uma leitura literal do escopo (a palavra “sonoros” some). E a III só é verdadeira na lógica da questão, em que a restritiva seleciona os fechados. Como Física, o quadro é outro: tubos fechados em uma extremidade produzem apenas harmônicos ímpares, e tubos abertos produzem todos os harmônicos, pares e ímpares — por isso a III, lida como afirmação de Física, seria imprecisa. A questão avalia a leitura da oração restritiva, não a acústica.</p>
+    </div>
+  </div>
+</article>
+
+<article class="ex" id="q14">
+  <div class="ex-head"><span class="n">14</span><span class="banca">Univan</span><span class="pill ok">Sua folha: b ✓</span></div>
+  <div class="ex-body">
+    <h4>Enunciado</h4>
+    <p>Em “Restam apenas 7% da mata que havia na época do descobrimento” há uma oração: a) adjetiva explicativa; b) adjetiva restritiva; c) coordenada explicativa; d) coordenada conclusiva; e) coordenada assindética.</p>
+    <h4>Resolução</h4>
+    <p>“<mark class="hl-a">que havia na época do descobrimento</mark>” retoma “mata” (que = a qual) → adjetiva. Sem vírgula, especifica de que mata se fala — a que existia na época do descobrimento, em oposição à de hoje → <b>restritiva</b>. Dentro dela, o <i>que</i> é objeto direto de “havia” (haver = existir, impessoal). As coordenadas das alternativas c, d, e são orações independentes; esta depende de “mata”.</p>
+    <p>Gabarito oficial: <span class="gab">b</span></p>
+  </div>
+</article>
+</section>
+
+<section id="exemplos">
+<h2><span class="secnum">04</span>Exemplos e analogias</h2>
+
+<h3>Analogia 1 — vagas e ocupantes</h3>
+<p>Pense na oração principal como um formulário com <b>vagas</b>: sujeito, objeto, complemento, predicativo, aposto. No período simples, cada vaga é preenchida por uma palavra ou expressão; no composto, uma vaga pode receber uma oração inteira. O “isso” é um <b>ocupante-teste</b>: cabe em qualquer vaga de substantivo, e a vaga em que ele entra dá o nome da oração.</p>
+<ul>
+  <li><b>Vaga</b> = função sintática · <b>ocupante</b> = oração subordinada · <b>ocupante-teste</b> = “isso” · <b>nome da vaga</b> = nome da oração.</li>
+</ul>
+<p class="muted"><b>Limites da analogia:</b> a oração-ocupante tem estrutura própria (sujeito, verbo, complementos), que também pode ser analisada; e a adjetiva não ocupa uma vaga da principal — ela se prende a um nome (o antecedente), como um adjetivo.</p>
+
+<h3>Analogia 2 — filtro × comentário</h3>
+<p>A <b>restritiva</b> funciona como um <b>filtro</b> aplicado a um grupo: de “homens”, passam só “os que mentem”. A <b>explicativa</b> funciona como um <b>comentário</b> sobre o grupo inteiro: “os homens — e, aliás, todos mentem —”. Sem vírgulas, filtro; com vírgulas, comentário.</p>
+<p class="muted"><b>Limites da analogia:</b> “comentário” não quer dizer informação dispensável. A explicativa é uma afirmação real do texto — “Todo homem, que mente, …” afirma que todo homem mente — e pode ser o centro do argumento, como na questão 12.</p>
+
+<h3>Exemplo — o “+1” no dia a dia <span class="tag ex">Exemplo criado</span></h3>
+<div class="grid2">
+  <div class="card r"><p class="lab">Restritiva · +1</p><p>“Meu irmão <mark class="hl-a">que mora em Campinas</mark> vem amanhã.”</p><p>Tenho mais de um irmão; falo daquele que mora em Campinas.</p></div>
+  <div class="card e"><p class="lab">Explicativa · 1</p><p>“Meu irmão, <mark class="hl-a">que mora em Campinas</mark>, vem amanhã.”</p><p>Tenho um irmão; a cidade é só uma informação a mais.</p></div>
+</div>
+
+<h3>Exemplo — uma oração, quatro funções</h3>
+<p>A mesma oração, “que iríamos a Salvador”, muda de classificação conforme a principal. As duas primeiras linhas são da apostila; as duas últimas foram criadas para completar o quadro.</p>
+<p class="scroll-hint">↔ deslize a tabela para o lado</p>
+<div class="tbl narrow">
+<table>
+  <thead><tr><th>Principal</th><th>+ “que iríamos a Salvador”</th><th>Por quê</th></tr></thead>
+  <tbody>
+    <tr><td>Combinamos <span class="muted">(bb)</span></td><td class="cl">objetiva direta</td><td>sujeito “nós”: combinamos <i>isso</i></td></tr>
+    <tr><td>Ficou combinado <span class="muted">(y)</span></td><td class="cl">subjetiva</td><td><i>isso</i> ficou combinado</td></tr>
+    <tr><td>O combinado foi <span class="muted">(criado)</span></td><td class="cl">predicativa</td><td>sujeito “o combinado” + verbo de ligação</td></tr>
+    <tr><td>Fizemos um combinado: <span class="muted">(criado)</span></td><td class="cl">apositiva</td><td>explica qual foi o combinado</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Moral: <b>a oração não muda; muda a principal</b>. Por isso, classifique sempre olhando para a principal.</p>
+</section>
+
+<section id="esquemas">
+<h2><span class="secnum">05</span>Esquemas</h2>
+<h3>Mapa do período composto</h3>
+<ul class="tree" aria-label="Mapa do período composto">
+  <li><span class="node n-p">Período composto</span>
+    <ul>
+      <li><b>por coordenação</b> — orações independentes, ligadas ou não por conjunção <span class="muted">(fora deste material; aparece só como alternativa errada na questão 14)</span></li>
+      <li><b>por subordinação</b> — oração principal + subordinada(s)
+        <ul>
+          <li><span class="node n-s">Substantivas</span> — valor de substantivo
+            <ul>
+              <li>subjetiva · predicativa · objetiva direta · objetiva indireta · completiva nominal · apositiva</li>
+              <li class="muted">caso especial: função de agente da passiva (fora da lista da NGB)</li>
+            </ul>
+          </li>
+          <li><span class="node n-a">Adjetivas</span> — valor de adjetivo
+            <ul><li>restritiva (sem vírgulas) · explicativa (entre vírgulas)</li></ul>
+          </li>
+          <li><span class="node n-v">Adverbiais</span> — circunstâncias
+            <ul><li>final, consecutiva… <span class="muted">(parte seguinte da apostila)</span></li></ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Fluxograma: achei uma subordinada — qual é?</h3>
+<div class="flow">
+  <div class="q"><span class="qn">Pergunta 1</span>Ela caracteriza um nome que vem antes e começa com pronome relativo (cabe “o qual”)?
+    <div class="yes"><b>Sim → ADJETIVA.</b> Está entre vírgulas (ou travessões, parênteses)? Sim → <b>explicativa</b>. Não → <b>restritiva</b>.</div>
+  </div>
+  <div class="no">↓ se não</div>
+  <div class="q"><span class="qn">Pergunta 2</span>A oração inteira cabe no lugar de “isso”?
+    <div class="yes"><b>Sim → SUBSTANTIVA.</b> Qual é a função do “isso” na principal?
+      <div class="branches">
+        <div>sujeito do verbo da principal → <b>subjetiva</b></div>
+        <div>depois de verbo de ligação, com sujeito expresso → <b>predicativa</b></div>
+        <div>complemento de verbo, sem preposição → <b>objetiva direta</b></div>
+        <div>complemento de verbo, com preposição → <b>objetiva indireta</b></div>
+        <div>complemento de nome, com preposição → <b>completiva nominal</b></div>
+        <div>explica um nome, depois de dois-pontos → <b>apositiva</b></div>
+      </div>
+    </div>
+  </div>
+  <div class="no">↓ se não</div>
+  <div class="q"><span class="qn">Pergunta 3</span>Indica tempo, causa, finalidade, consequência…?
+    <div class="yes"><b>Sim → ADVERBIAL.</b></div>
+  </div>
+</div>
+
+<h3>Quadro das seis substantivas</h3>
+<p class="scroll-hint">↔ deslize a tabela para o lado</p>
+<div class="tbl">
+<table>
+  <thead><tr><th>Tipo</th><th>“Isso” é…</th><th>Preposição?</th><th>Sinal típico</th><th>Exemplo da apostila</th></tr></thead>
+  <tbody>
+    <tr><td class="cl">Subjetiva</td><td>sujeito</td><td>não</td><td>“É + adjetivo”; convém, cumpre, parece; verbo + se</td><td>É importante que todos estudem.</td></tr>
+    <tr><td class="cl">Predicativa</td><td>predicativo</td><td>não</td><td>sujeito determinado + ser</td><td>Meu desejo é que todos sejam felizes no vestibular.</td></tr>
+    <tr><td class="cl">Objetiva direta</td><td>objeto direto</td><td>não</td><td>dizer, perguntar, saber, prometer…</td><td>Dizem que ele vem.</td></tr>
+    <tr><td class="cl">Objetiva indireta</td><td>objeto indireto</td><td>sim, pedida pelo verbo</td><td>lembrar-se de, aspirar a, duvidar de…</td><td>Genebaldo aspirava a galgar o posto de chefe.</td></tr>
+    <tr><td class="cl">Completiva nominal</td><td>complemento nominal</td><td>sim, pedida pelo nome</td><td>medo, certeza, esperança, dúvida…</td><td>A população não perde a esperança de que a renda seja redistribuída.</td></tr>
+    <tr><td class="cl">Apositiva</td><td>aposto</td><td>não</td><td>dois-pontos depois de nome “vago”</td><td>Uma coisa me intrigava: aquela criança chorar sempre no mesmo horário.</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="pegadinhas">
+<h2><span class="secnum">06</span>Erros frequentes e pegadinhas</h2>
+<p class="lead-in">Para cada erro: por que ele parece certo e como evitá-lo. Os números entre parênteses apontam a questão da apostila em que ele aparece.</p>
+<ol class="steps">
+  <li><b>Achar que todo “que” é pronome relativo.</b> Engana porque o relativo é o “que” mais frequente. <i>Evite</i> com os testes do “o qual” e do “isso”; lembre do “é que” expletivo (04c) e do “tão… que” consecutivo (07c).</li>
+  <li><b>Confundir objetiva indireta com completiva nominal.</b> Engana porque as duas têm preposição. <i>Evite</i> perguntando quem exige a preposição: verbo → objetiva indireta; nome → completiva nominal (“Tenho esperança de que…” → completiva).</li>
+  <li><b>Chamar de subjetiva toda oração depois de “é”.</b> Engana porque “É importante que…” é subjetiva. <i>Evite</i> procurando um sujeito determinado: “A verdade é que…” → predicativa.</li>
+  <li><b>Classificar pelo “jeito” da oração, sem olhar a principal.</b> Engana porque a oração é idêntica. <i>Evite</i> olhando a principal: “Combinamos que…” (objetiva direta) × “Ficou combinado que…” (subjetiva).</li>
+  <li><b>Dar sujeito ao verbo haver no sentido de existir.</b> Engana porque “existir” tem sujeito. <i>Evite</i> lembrando que “haver” é impessoal: “Não houve quem lhe acudisse” → objetiva direta.</li>
+  <li><b>Ignorar o pronome em lembrar/esquecer.</b> Engana porque o sentido é quase o mesmo. <i>Evite</i>: lembrar algo (objetiva direta) × lembrar-se de algo (objetiva indireta).</li>
+  <li><b>Usar uma vírgula só na explicativa.</b> Engana porque a pausa parece estar só depois. <i>Evite</i>: no meio da frase, o par de vírgulas é obrigatório (05a).</li>
+  <li><b>Confundir os parênteses de um aposto com a explicativa.</b> Engana porque parênteses também separam. <i>Evite</i> olhando se a oração, dentro dos parênteses, tem pontuação própria (11).</li>
+  <li><b>Tratar a explicativa como informação inútil.</b> Engana por causa da definição “pode ser retirada”. <i>Evite</i>: o que não muda é a identificação do antecedente; a informação pode ser central (12).</li>
+  <li><b>Fazer restritiva com nome próprio.</b> Engana porque, sem vírgula, a frase “soa” normal. <i>Evite</i>: nome próprio ou ser único pede explicativa (06).</li>
+  <li><b>Esquecer a preposição antes do relativo.</b> Engana porque a fala a omite. <i>Evite</i>: “a doença de que ele morreu”, “o filme de que gosto”.</li>
+  <li><b>Escrever “cujo o”, “cuja a”.</b> Engana pela analogia com “o qual”. <i>Evite</i>: “cujo” nunca leva artigo depois.</li>
+  <li><b>Ler “pode-se afirmar” sem conferir o escopo.</b> Engana porque a frase parece equivalente. <i>Evite</i> comparando palavra por palavra (13: “tubos fechados” ≠ “tubos sonoros fechados”).</li>
+  <li><b>Achar que reduzida de infinitivo não é oração.</b> Engana porque não há conectivo. <i>Evite</i>: infinitivo depois de verbo que não é auxiliar forma outra oração (“prometeu ajudar”).</li>
+</ol>
+</section>
+
+<section id="vestibulares">
+<h2><span class="secnum">07</span>O que mais importa para os vestibulares</h2>
+<p>O que dá para afirmar com segurança vem do próprio material: a apostila reúne questões da <b>Fuvest</b> (02, 05), da <b>Unesp</b> (09, 10), do <b>ITA</b> (04), do <b>Insper</b> (07, 08) e da <b>Univan</b> (03, 11, 12, 13, 14). O padrão delas não é pedir rótulos soltos, e sim <b>efeito de sentido, pontuação e identificação do “que”</b>. Não há aqui nenhuma estatística de cobrança: a priorização abaixo se baseia nessas questões e na estrutura do assunto.</p>
+<div class="grid2">
+  <div class="card"><p class="lab">Fundamento indispensável</p><p>Reconhecer a subordinada e o seu tipo (testes do “isso” e do “o qual”); os seis tipos de substantiva; restritiva × explicativa pela pontuação.</p></div>
+  <div class="card"><p class="lab">Aplicação que o material mais exige</p><p>Explicar a diferença de sentido com e sem vírgulas, nomeando o pressuposto (02, 03, 05, 11, 12); reescrever com vírgulas (05).</p></div>
+  <div class="card"><p class="lab">Pegadinha recorrente no material</p><p>O “que” que não é pronome (04); orações de aparência diferente com a mesma função (07); o escopo de uma afirmação (13).</p></div>
+  <div class="card"><p class="lab">Aprofundamento</p><p>Regência do relativo (de que, a que, em que); “quem/quanto” sem antecedente; função de agente da passiva; efeito argumentativo da explicativa.</p></div>
+</div>
+<div class="callout plus">
+  <span class="tag plus">Complemento para melhor compreensão · da gramática para a redação</span>
+  <p>A diferença restritiva × explicativa pesa na redação. “Os jovens, que não leem, …” afirma que <b>todos</b> os jovens não leem — uma generalização que o corretor pode considerar indevida. “Os jovens que não leem…” restringe a afirmação a um grupo. Numa redação argumentativa, essa vírgula separa um argumento cuidadoso de uma generalização. E, na leitura, ela ajuda a perceber quando um texto atribui uma característica a um grupo inteiro, como na questão 12.</p>
+</div>
+</section>
+
+<section id="videos">
+<h2><span class="secnum">08</span>Vídeos completos verificados</h2>
+<p>Verificados em <b>22/10/2026</b>: cada página foi aberta para conferir título, canal, duração e se o vídeo estava público e disponível. A disponibilidade pode mudar depois dessa data.</p>
+
+<h3>Para as substantivas (3.3 a 3.11)</h3>
+<div class="vids">
+  <div class="vid">
+    <p class="vt">🟣 ORAÇÕES SUBORDINADAS SUBSTANTIVAS | Aula de Português para concursos, vestibulares, provas, ENEM</p>
+    <p class="vm">Português com Letícia (prof.ª Letícia Góes) · 15 min 24 s · aula única</p>
+    <p><b>O que você aprende:</b> como identificar a substantiva; conjunções integrantes, pronomes e advérbios interrogativos; os seis tipos, um a um.</p>
+    <p><b>Por que complementa:</b> cobre o mesmo escopo da apostila numa aula só — boa para uma primeira passada ou para revisar na véspera.</p>
+    <a class="watch" href="https://www.youtube.com/watch?v=3ut2uySWn9Y" target="_blank" rel="noopener">Assistir no YouTube ↗</a>
+  </div>
+  <div class="vid">
+    <p class="vt">Sequência em duas partes — Professor Noslen</p>
+    <div class="seq">
+      <p class="part">Parte 1 · 23 min 02 s</p>
+      <p><b>Orações Subordinadas Substantivas | MÉTODO NOSLEN</b> — subjetiva, predicativa e apositiva; o teste de substituição por “isto”; exercícios resolvidos.</p>
+      <a class="watch" href="https://www.youtube.com/watch?v=PARofLLjKkU" target="_blank" rel="noopener">Assistir a parte 1 ↗</a>
+    </div>
+    <div class="seq">
+      <p class="part">Parte 2 · 18 min 23 s</p>
+      <p><b>ORAÇÕES SUBORDINADAS SUBSTANTIVAS: Objetiva Direta, Indireta e Completiva Nominal</b> — as outras três, terminando com a diferença entre objetiva indireta e completiva nominal.</p>
+      <a class="watch" href="https://www.youtube.com/watch?v=a9WMRtTsmLM" target="_blank" rel="noopener">Assistir a parte 2 ↗</a>
+    </div>
+    <p><b>Por que complementa:</b> a parte 1 agrupa justamente as substantivas da lógica S/V/C das suas anotações, e a parte 2 fecha na confusão objetiva indireta × completiva nominal. Os exercícios do professor vêm de concursos, mas a teoria é a mesma.</p>
+  </div>
+</div>
+
+<h3>Para as adjetivas (3.12 e 3.13)</h3>
+<div class="vids">
+  <div class="vid">
+    <p class="vt">🟣 ORAÇÕES SUBORDINADAS ADJETIVAS – RESTRITIVAS E EXPLICATIVAS | Português do Zero</p>
+    <p class="vm">Português com Letícia (prof.ª Letícia Góes) · 16 min 48 s</p>
+    <p><b>O que você aprende:</b> revisão de adjetivo e de oração, pronomes relativos, orações adjetivas e como diferenciar restritiva de explicativa.</p>
+    <p><b>Por que complementa:</b> retoma os fundamentos das seções 3.12 e 3.13 em ordem didática, do zero.</p>
+    <a class="watch" href="https://www.youtube.com/watch?v=CKNCaNvtanU" target="_blank" rel="noopener">Assistir no YouTube ↗</a>
+  </div>
+  <div class="vid">
+    <p class="vt">Oração Subordinada Adjetiva: aprenda de forma SIMPLES</p>
+    <p class="vm">Professor Noslen · 14 min 42 s</p>
+    <p><b>O que você aprende:</b> restritiva × explicativa, pronome relativo, uso da vírgula e questões resolvidas (de concursos).</p>
+    <p><b>Por que complementa:</b> bom para treinar o reconhecimento rápido depois de entender a teoria.</p>
+    <a class="watch" href="https://www.youtube.com/watch?v=QhWllH6I3zQ" target="_blank" rel="noopener">Assistir no YouTube ↗</a>
+  </div>
+</div>
+<p class="muted">Os vídeos não substituem a análise das 42 frases e dos 14 exercícios da sua apostila, feita nesta aula: use-os para ouvir a teoria explicada de outro jeito.</p>
+</section>
+
+<section id="revisao-final">
+<h2><span class="secnum">09</span>Revisão final dos conceitos principais</h2>
+<ol class="steps">
+  <li><b>Oração subordinada</b> é um termo do período simples expandido em oração; classifica-se pela <b>função que exerce na principal</b> (<a href="#conceito">3.1</a>).</li>
+  <li><b>Substantiva</b> troca por “isso”; começa com conjunção integrante (<i>que, se</i>), palavra interrogativa, <i>quem/quanto</i> sem antecedente — ou não tem conectivo e usa infinitivo (<a href="#reconhecer">3.3</a>).</li>
+  <li>Os seis tipos são as funções do substantivo: <b>sujeito, predicativo, objeto direto, objeto indireto, complemento nominal, aposto</b>.</li>
+  <li><b>Subjetiva × predicativa:</b> o “isso” é o sujeito, ou vem depois de verbo de ligação caracterizando um sujeito expresso — <i>É verdade que…</i> × <i>A verdade é que…</i> (<a href="#predicativa">3.5</a>).</li>
+  <li><b>Objetiva indireta × completiva nominal:</b> a preposição vem do verbo ou do nome (<a href="#completiva-nominal">3.8</a>).</li>
+  <li><b>Apositiva</b> explica um nome, normalmente depois de dois-pontos (<a href="#apositiva">3.9</a>).</li>
+  <li><b>Adjetiva:</b> o pronome relativo retoma o antecedente (cabe “o qual”) e tem função dentro da oração; a oração é adjunto adnominal (<a href="#adjetivas">3.12</a>).</li>
+  <li><b>Restritiva</b> (sem vírgulas) restringe e pressupõe “+1”; <b>explicativa</b> (entre vírgulas) generaliza e vale para todo o antecedente — típica de nomes próprios (<a href="#restritiva-explicativa">3.13</a>).</li>
+  <li>No meio da frase, a explicativa leva <b>duas vírgulas</b>.</li>
+  <li><b>Nem todo “que” é pronome:</b> pode ser integrante, interrogativo, consecutivo ou expletivo (<a href="#que">3.14</a>).</li>
+  <li>Nas questões de sentido, escreva a paráfrase com <b>“todos”</b> × <b>“somente os que”</b> e explicite o <b>pressuposto</b>.</li>
+</ol>
+</section>
+
+<div class="kit-zone" id="kit">
+<div class="area">
+  <p class="area-tag">Área 2</p>
+  <h2>Kit de revisão pré-prova</h2>
+  <p>Feito para ser usado sozinho, sem reler a aula. Tudo o que você precisa recuperar está aqui; os links para a aula servem só para quem quiser aprofundar um ponto.</p>
+</div>
+
+<section id="kit-rotas">
+<h2><span class="secnum">K1</span>Como usar: escolha a rota pelo tempo</h2>
+<p><b>Estratégia escolhida para este conteúdo.</b> A prova cobra duas coisas: <b>classificar</b> orações e <b>explicar o efeito de sentido</b> da vírgula. Reler a teoria dá sensação de domínio, mas não treina nenhuma das duas. Por isso o kit combina: (1) quadros de identificação com testes de substituição; (2) pares de frases quase iguais com classificações diferentes; (3) recuperação ativa — classificar e justificar sem olhar; (4) um modelo de resposta para as discursivas de sentido.</p>
+<div class="routes">
+  <div class="route">
+    <span class="dur">Emergência · 10 a 15 min</span>
+    <h3>Véspera, pouco tempo</h3>
+    <ol>
+      <li>Leia os <a href="#kit-essenciais">Essenciais (K3)</a> — 4 min.</li>
+      <li>Faça o <a href="#kit-teste">Teste-relâmpago (K7, parte 1)</a> sem consultar — 6 min.</li>
+      <li>Confira e releia só os quadros ligados ao que errou — 4 min.</li>
+    </ol>
+  </div>
+  <div class="route">
+    <span class="dur">Rápida · cerca de 30 min</span>
+    <h3>Revisão de véspera</h3>
+    <ol>
+      <li>Rota de emergência — 15 min.</li>
+      <li><a href="#kit-comparacoes">Comparações (K5)</a> — 5 min.</li>
+      <li>Classifique as 12 frases da <a href="#teste-p2">parte 2 do teste</a> — 6 min.</li>
+      <li>Uma discursiva da <a href="#teste-p4">parte 4</a>, com o <a href="#kit-roteiros">modelo (K4)</a> — 4 min.</li>
+    </ol>
+  </div>
+  <div class="route">
+    <span class="dur">Completa · cerca de 60 min</span>
+    <h3>Revisão com folga</h3>
+    <ol>
+      <li>Rota rápida — 30 min.</li>
+      <li><a href="#frases">Modo treino nas 42 frases</a> da aula — 15 min.</li>
+      <li>Refaça as questões 04, 05, 06 e 11 da apostila sem olhar a resolução — 10 min.</li>
+      <li><a href="#teste-p3">Objetivas e desafio (K7, partes 3 e 5)</a> — 5 min.</li>
+    </ol>
+  </div>
+</div>
+<p class="muted">Os tempos incluem tentar responder antes de conferir. São estimativas: nenhuma rota substitui o estudo da aula completa.</p>
+</section>
+
+<section id="kit-diagnostico">
+<h2><span class="secnum">K2</span>Diagnóstico da sua folha</h2>
+<p>Nas fotos, as 14 questões de fixação aparecem com marcações ou respostas escritas à mão. Comparando com o gabarito da própria apostila:</p>
+<div class="score">
+  <div><div class="big">7,5<small>/10</small></div><p class="muted" style="margin:.35rem 0 0;font-size:.85rem">nota hipotética</p></div>
+  <div class="qgrid" aria-label="Resultado por questão">
+    <div class="qcell ok">01<span>✓</span></div><div class="qcell ok">02<span>✓</span></div><div class="qcell ok">03<span>✓</span></div><div class="qcell no">04<span>✗</span></div><div class="qcell half">05<span>½</span></div><div class="qcell blank">06<span>—</span></div><div class="qcell ok">07<span>✓</span></div>
+    <div class="qcell ok">08<span>✓</span></div><div class="qcell ok">09<span>✓</span></div><div class="qcell ok">10<span>✓</span></div><div class="qcell blank">11<span>—</span></div><div class="qcell ok">12<span>✓</span></div><div class="qcell ok">13<span>✓</span></div><div class="qcell ok">14<span>✓</span></div>
+  </div>
+</div>
+<p><b>Como a nota foi calculada (suposição explícita):</b> 1 ponto por questão; a 05 vale meio ponto (item a errado, item b certo); questões em branco valem zero. Total: 10,5 de 14, o que dá 7,5 na escala de 0 a 10. A lista a)–pp) não entrou na conta, porque não tem respostas na folha.</p>
+<h3>O que impediria o 10</h3>
+<ol>
+  <li><b>O “que” expletivo da <a href="#q04">questão 04</a></b> — você marcou b (pronome relativo) em vez de c (“é que” de realce). Ponto a treinar: reconhecer quando o “que” não é pronome.</li>
+  <li><b>A vírgula da explicativa na <a href="#q05">questão 05a</a></b> — uma vírgula só, depois de “trabalho”. Ponto a treinar: o par de vírgulas.</li>
+  <li><b>As discursivas <a href="#q06">06</a> e <a href="#q11">11</a> em branco</b> — justamente as que pedem explicar o sentido por escrito. Ponto a treinar: o <a href="#kit-roteiros">modelo de resposta (K4)</a>.</li>
+</ol>
+<p class="muted">Ajustes menores, que não tiram ponto pelo gabarito: em 10b, a forma do texto é “dedicadas”; em 09, o enunciado pede também esclarecer a mudança; em 02, nomear os tipos de oração deixaria a resposta mais precisa.</p>
+<h3>Prioridades para a próxima revisão</h3>
+<div class="prio">
+  <div><b class="lvl">Prioridade 1 · indispensável</b><p>Distinguir conjunção integrante de pronome relativo (testes “isso” e “o qual”) e restritiva de explicativa (vírgulas, sentido, pressuposto). É a base de 12 das 14 questões da apostila (todas, exceto 09 e 10) e foi onde estiveram os seus erros.</p></div>
+  <div class="p2"><b class="lvl">Prioridade 2 · aplicação</b><p>Os seis tipos de substantiva — sobretudo objetiva indireta × completiva nominal e subjetiva × predicativa —, a escrita das respostas de sentido e a pontuação da explicativa.</p></div>
+  <div class="p3"><b class="lvl">Prioridade 3 · aprofundamento</b><p>Casos especiais (“quem/quanto” sem antecedente, agente da passiva, “tudo o que”), preposição antes do relativo e “cujo”.</p></div>
+</div>
+<p class="muted">Esta ordem é uma estratégia baseada no material e nas suas respostas, não uma previsão do que vai cair na prova.</p>
+</section>
+
+<section id="kit-essenciais">
+<h2><span class="secnum">K3</span>Essenciais para lembrar</h2>
+<div class="ess">
+  <div class="card">
+    <p class="lab">Cartão A · os três tipos</p>
+    <ul>
+      <li><b>Substantiva</b> — troca por “isso”; tem função de substantivo.</li>
+      <li><b>Adjetiva</b> — caracteriza um nome anterior; começa com pronome relativo (cabe “o qual”).</li>
+      <li><b>Adverbial</b> — indica circunstância: tempo, causa, finalidade, consequência…</li>
+    </ul>
+  </div>
+  <div class="card">
+    <p class="lab">Cartão B · as seis substantivas</p>
+    <div class="tbl stack">
+    <table>
+      <thead><tr><th>Tipo</th><th>O “isso” é…</th><th>Sinal</th><th>Exemplo</th></tr></thead>
+      <tbody>
+        <tr><td class="cl">Subjetiva</td><td data-l="O “isso” é…">sujeito</td><td data-l="Sinal">“É + adjetivo”; convém, cumpre, parece; verbo + se</td><td data-l="Exemplo">É importante que todos estudem.</td></tr>
+        <tr><td class="cl">Predicativa</td><td data-l="O “isso” é…">predicativo</td><td data-l="Sinal">sujeito determinado + ser</td><td data-l="Exemplo">A verdade é que todos são inteligentes.</td></tr>
+        <tr><td class="cl">Objetiva direta</td><td data-l="O “isso” é…">objeto direto</td><td data-l="Sinal">verbo sem preposição</td><td data-l="Exemplo">Dizem que ele vem.</td></tr>
+        <tr><td class="cl">Objetiva indireta</td><td data-l="O “isso” é…">objeto indireto</td><td data-l="Sinal">preposição pedida pelo <b>verbo</b></td><td data-l="Exemplo">Lembrei-me de que era sábado.</td></tr>
+        <tr><td class="cl">Completiva nominal</td><td data-l="O “isso” é…">complemento nominal</td><td data-l="Sinal">preposição pedida pelo <b>nome</b></td><td data-l="Exemplo">Tenho esperança de que nosso time vença.</td></tr>
+        <tr><td class="cl">Apositiva</td><td data-l="O “isso” é…">aposto</td><td data-l="Sinal">dois-pontos depois de um nome</td><td data-l="Exemplo">Dei-lhe um conselho: que não se familiarizasse com estranhos.</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><b>Casos especiais:</b> “quem/quanto” sem antecedente — classifique pela função (“Quem corre cansa” → subjetiva). “Por quem entende do assunto” numa frase passiva → função de agente da passiva, fora da lista oficial: use o rótulo do professor. <a href="#casos-especiais">Detalhes na aula</a>.</p>
+  </div>
+  <div class="grid2" style="margin:0">
+    <div class="card r"><p class="lab">Cartão C · restritiva</p><p><b>Sem vírgulas.</b> Seleciona parte do grupo: “<b>somente</b> os X que…”. <b>Pressupõe +1</b> (existem X sem a característica).</p><p>“Todo homem que mente é indigno de confiança.”</p></div>
+    <div class="card e"><p class="lab">Cartão C · explicativa</p><p><b>Entre vírgulas.</b> Vale para o grupo inteiro: “os X — <b>todos</b> —”. Típica de nome próprio e ser único. Pode sair sem mudar a referência.</p><p>“Todo homem, que mente, é indigno de confiança.”</p></div>
+  </div>
+  <div class="card">
+    <p class="lab">Cartão D · os “que” que não são pronome relativo</p>
+    <ul>
+      <li><b>Integrante</b> — a oração inteira vira “isso”: “Dizem que ele vem”.</li>
+      <li><b>Interrogativo</b> — vira pergunta direta: “Não sei que livro ler”.</li>
+      <li><b>Consecutivo</b> — depois de tão/tal/tanto: “tão grande que…”.</li>
+      <li><b>Expletivo</b> — “é que” removível: “Tais fatores (…) é que impulsionam…”.</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<section id="kit-roteiros">
+<h2><span class="secnum">K4</span>Como reconhecer o pedido e como responder</h2>
+<div class="tbl narrow stack">
+<table>
+  <thead><tr><th>Se o enunciado diz…</th><th>Faça</th></tr></thead>
+  <tbody>
+    <tr><td>“Classifique a oração”</td><td data-l="Faça">Roteiro A.</td></tr>
+    <tr><td>“Explique a diferença de sentido”, “pressuposto”, “subentende-se”</td><td data-l="Faça">Roteiro B + modelo de resposta.</td></tr>
+    <tr><td>“Altere o sentido apenas com vírgulas”</td><td data-l="Faça">Isole a adjetiva com o <b>par</b> de vírgulas e explique a mudança (restritiva → explicativa).</td></tr>
+    <tr><td>“Assinale a opção em que o <i>que</i> não é pronome”</td><td data-l="Faça">Teste dos quatro “que” (cartão D): procure o integrante, o consecutivo ou o expletivo.</td></tr>
+    <tr><td>“Tem a mesma função sintática que…”</td><td data-l="Faça">Classifique primeiro a oração do enunciado; depois procure a mesma função nas alternativas.</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="grid2">
+  <div class="card">
+    <p class="lab">Roteiro A · classificar</p>
+    <ol class="steps">
+      <li>Sublinhe os verbos: cada verbo ou locução = uma oração.</li>
+      <li>Ache o conectivo da subordinada.</li>
+      <li>Cabe “o qual”? → <b>adjetiva</b> (com vírgulas: explicativa; sem: restritiva).</li>
+      <li>Senão, troque a oração por “isso” e veja a função na principal → nome da <b>substantiva</b>.</li>
+      <li>Sem conectivo e com infinitivo? É reduzida: desenvolva com “que” e repita o passo 4.</li>
+    </ol>
+  </div>
+  <div class="card">
+    <p class="lab">Roteiro B · explicar o sentido</p>
+    <ol class="steps">
+      <li>Ache o antecedente.</li>
+      <li>Veja as vírgulas.</li>
+      <li>Escreva a paráfrase: restritiva = “somente os X que…”; explicativa = “todos os X…, e todos…”.</li>
+      <li>Diga o pressuposto da restritiva: existem X que não…</li>
+    </ol>
+  </div>
+</div>
+<p><b>Modelo de resposta (preencha os colchetes):</b></p>
+<div class="model">Em (a), com vírgulas, a oração adjetiva é <b>explicativa</b>: [a característica] vale para <b>todos</b> os [X], e todos [predicado]. Em (b), sem vírgulas, é <b>restritiva</b>: <b>somente</b> os [X] que [característica] [predicado] — o que <b>pressupõe</b> a existência de [X] que não [característica].</div>
+<p><b>Exemplo preenchido</b> <span class="tag ex">Exemplo criado</span> — (a) “Os alunos, que estudaram, passaram.” (b) “Os alunos que estudaram passaram.”</p>
+<div class="model">Em (a), com vírgulas, a oração é explicativa: todos os alunos estudaram, e todos passaram. Em (b), sem vírgulas, é restritiva: somente os alunos que estudaram passaram — o que pressupõe que houve alunos que não estudaram (e não passaram).</div>
+</section>
+
+<section id="kit-comparacoes">
+<h2><span class="secnum">K5</span>Comparações que evitam confusão</h2>
+<div class="tbl stack">
+<table>
+  <thead><tr><th>Par</th><th>Classificação</th><th>O detalhe que decide</th></tr></thead>
+  <tbody>
+    <tr><td>“É verdade que…” × “A verdade é que…”</td><td data-l="Classificação" class="cl">subjetiva × predicativa</td><td data-l="O detalhe que decide">O artigo: “a verdade” vira sujeito.</td></tr>
+    <tr><td>“Combinamos que…” × “Ficou combinado que…” / “Combinou-se que…”</td><td data-l="Classificação" class="cl">objetiva direta × subjetiva</td><td data-l="O detalhe que decide">A principal tem sujeito (“nós”) ou é passiva / de ligação.</td></tr>
+    <tr><td>“Dizem que ele vem” × “Diz-se que ele vem”</td><td data-l="Classificação" class="cl">objetiva direta × subjetiva</td><td data-l="O detalhe que decide">Sujeito indeterminado × voz passiva sintética.</td></tr>
+    <tr><td>“Duvidava de estarem prontos” × “Tinha dúvida de estarem prontos”</td><td data-l="Classificação" class="cl">objetiva indireta × completiva nominal</td><td data-l="O detalhe que decide">Quem pede a preposição: o verbo ou o nome.</td></tr>
+    <tr><td>“Lembrei que era sábado” × “Lembrei-me de que era sábado”</td><td data-l="Classificação" class="cl">objetiva direta × objetiva indireta</td><td data-l="O detalhe que decide">O pronome muda a regência.</td></tr>
+    <tr><td>“Meu desejo é que…” × “Tenho um desejo: que…”</td><td data-l="Classificação" class="cl">predicativa × apositiva</td><td data-l="O detalhe que decide">Verbo de ligação × dois-pontos.</td></tr>
+    <tr><td>“Dei-lhe um conselho: que não…” × “Dei-lhe um conselho, que ele não seguiu.”</td><td data-l="Classificação" class="cl">apositiva × adjetiva explicativa</td><td data-l="O detalhe que decide">Conteúdo do nome (integrante) × informação sobre o nome (relativo = o qual).</td></tr>
+    <tr><td>“Perguntam quem falou” × “Quem corre cansa”</td><td data-l="Classificação" class="cl">objetiva direta × subjetiva</td><td data-l="O detalhe que decide">“Quem” interrogativo × “quem” = aquele que.</td></tr>
+    <tr><td>“Os homens que têm seu preço…” × “Os homens, que têm seu preço, …”</td><td data-l="Classificação" class="cl">restritiva × explicativa</td><td data-l="O detalhe que decide">Só alguns × todos.</td></tr>
+    <tr><td>“Não houve quem lhe acudisse”</td><td data-l="Classificação" class="cl">objetiva direta</td><td data-l="O detalhe que decide">“Haver” = existir não tem sujeito.</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="kit-erros">
+<h2><span class="secnum">K6</span>Erros que precisam ser evitados</h2>
+<ol class="steps">
+  <li><b>“Que” sem antecedente não é relativo.</b> Faça o teste do “o qual” antes de classificar.</li>
+  <li><b>Preposição não decide sozinha.</b> Veja se vem do verbo (objetiva indireta) ou do nome (completiva nominal).</li>
+  <li><b>Com “ser”, procure o sujeito determinado.</b> “A verdade é que…” é predicativa.</li>
+  <li><b>Explicativa no meio da frase = duas vírgulas.</b> Uma vírgula só separa sujeito e verbo.</li>
+  <li><b>Nome próprio pede explicativa.</b> Não há grupo do qual selecionar.</li>
+  <li><b>Em “pode-se afirmar”, compare palavra por palavra.</b> Uma palavra a menos pode mudar o escopo.</li>
+</ol>
+</section>
+
+<section id="kit-teste">
+<h2><span class="secnum">K7</span>Teste de recuperação</h2>
+<p>Responda de cabeça (ou num papel) antes de abrir cada resposta. Se errar, o gabarito indica o trecho da aula para revisar.</p>
+
+<h3 id="teste-p1">Parte 1 · Teste-relâmpago</h3>
+<div class="q-item"><p class="q"><span class="qn">1.</span>Que teste mostra que uma oração é substantiva?</p>
+  <details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p>Trocar a oração inteira por “isso”: se couber, é substantiva, e a função do “isso” dá o nome. <a href="#reconhecer">Aula 3.3</a></p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">2.</span>Que teste mostra que o “que” é pronome relativo?</p>
+  <details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p>Trocar por “o qual / a qual / os quais / as quais”: o relativo retoma um antecedente e tem função dentro da oração. <a href="#adjetivas">Aula 3.12</a></p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">3.</span>O que separa a objetiva indireta da completiva nominal?</p>
+  <details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p>Quem exige a preposição: o verbo (objetiva indireta) ou o nome (completiva nominal). <a href="#completiva-nominal">Aula 3.8</a></p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">4.</span>Por que “Não houve quem lhe acudisse” não tem oração subjetiva?</p>
+  <details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p>Porque “haver” no sentido de existir é impessoal: não tem sujeito. A oração é objeto direto de “houve”. <a href="#objetiva-direta">Aula 3.6</a></p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">5.</span>Classifique a oração introduzida por “que” em “É verdade que…” e em “A verdade é que…”.</p>
+  <details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p>Subjetiva e predicativa, respectivamente: com o artigo, “a verdade” passa a ser o sujeito. <a href="#predicativa">Aula 3.5</a></p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">6.</span>Qual é o pressuposto da restritiva em “A doença de que nosso amigo morreu inicialmente parecia sem gravidade”?</p>
+  <details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p>Que o amigo teve mais de uma doença (+1); a oração aponta aquela de que ele morreu. <a href="#restritiva-explicativa">Aula 3.13</a></p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">7.</span>Como se pontua uma oração explicativa no meio da frase?</p>
+  <details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p>Com duas vírgulas: uma antes e outra depois da oração. Uma vírgula só separaria o sujeito do verbo. <a href="#q05">Questão 05</a></p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">8.</span>Por que “Moisés, que também contou a sua morte, …” é explicativa?</p>
+  <details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p>Porque “Moisés” é nome próprio de um indivíduo único: a oração não seleciona um Moisés entre vários; só acrescenta informação. <a href="#q06">Questão 06</a></p></div></details></div>
+
+<h3 id="teste-p2">Parte 2 · Classifique e justifique <span class="tag ex">Frases criadas</span></h3>
+<p>Para cada frase, diga o tipo da oração subordinada e o teste que você usou.</p>
+<div class="q-item"><p class="q"><span class="qn">1.</span>É provável que chova amanhã.</p><details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p><b>Subjetiva</b> — “isso é provável”.</p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">2.</span>Tenho certeza de que você vai passar.</p><details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p><b>Completiva nominal</b> — “certeza de”: quem pede a preposição é o nome.</p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">3.</span>Necessito de que me ajudem.</p><details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p><b>Objetiva indireta</b> — “necessitar de”: quem pede a preposição é o verbo.</p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">4.</span>O ideal seria que todos lessem mais.</p><details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p><b>Predicativa</b> — sujeito “o ideal” + verbo de ligação “seria”.</p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">5.</span>Só peço uma coisa: que me escutem.</p><details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p><b>Apositiva</b> — depois dos dois-pontos, explica “uma coisa”.</p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">6.</span>Ninguém sabe onde ele mora.</p><details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p><b>Objetiva direta</b> — pergunta indireta (“Onde ele mora?”) completando “sabe”.</p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">7.</span>Sabe-se que o planeta está aquecendo.</p><details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p><b>Subjetiva</b> — voz passiva sintética: “isso é sabido”.</p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">8.</span>O livro que você me emprestou é ótimo.</p><details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p><b>Adjetiva restritiva</b> — “que” = o qual, retoma “livro”; sem vírgulas.</p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">9.</span>Machado de Assis, que nasceu no Rio de Janeiro, escreveu <i>Dom Casmurro</i>.</p><details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p><b>Adjetiva explicativa</b> — nome próprio, oração entre vírgulas.</p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">10.</span>A minha dúvida é se ele virá.</p><details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p><b>Predicativa</b> — sujeito “a minha dúvida” + “é”; o “se” é conjunção integrante.</p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">11.</span>Insisto em que você venha.</p><details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p><b>Objetiva indireta</b> — “insistir em”.</p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">12.</span>Estava tão cansado que dormiu no ônibus.</p><details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p><b>Nem substantiva nem adjetiva: adverbial consecutiva</b> (“tão… que”). Não cabe “isso” nem “o qual”.</p></div></details></div>
+
+<h3 id="teste-p3">Parte 3 · Objetivas <span class="tag ex">Questões criadas</span></h3>
+<div class="q-item"><p class="q"><span class="qn">1.</span>“Os candidatos que fizeram a prova à tarde terão o resultado amanhã.” É correto afirmar:</p>
+  <ol class="opts"><li>a) Todos os candidatos fizeram a prova à tarde.</li><li>b) Pressupõe-se que houve candidatos que não fizeram a prova à tarde.</li><li>c) A oração adjetiva é explicativa.</li><li>d) Inserir vírgulas não mudaria o sentido.</li></ol>
+  <details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p><b>b.</b> A restritiva cria o pressuposto “+1”. A a) seria o sentido da explicativa; a c) erra o tipo (não há vírgulas); a d) ignora que as vírgulas transformariam a oração em explicativa.</p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">2.</span>Em qual alternativa o <i>que</i> é conjunção integrante?</p>
+  <ol class="opts"><li>a) O aluno que faltou perdeu a prova.</li><li>b) Espero que você entenda.</li><li>c) Estava tão nervoso que esqueceu tudo.</li><li>d) Ele é que resolveu o problema.</li></ol>
+  <details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p><b>b.</b> “Espero isso” → objetiva direta. Na a), relativo (“o aluno o qual faltou”); na c), consecutiva; na d), expletivo (“Ele resolveu o problema”).</p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">3.</span>“Tenho medo de que o prazo acabe.” A oração “de que o prazo acabe” é:</p>
+  <ol class="opts"><li>a) objetiva indireta, porque começa com preposição.</li><li>b) completiva nominal, porque completa o nome “medo”.</li><li>c) objetiva direta, porque completa o verbo “tenho”.</li><li>d) adjetiva restritiva, porque caracteriza “medo”.</li></ol>
+  <details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p><b>b.</b> A armadilha é a a): ter preposição não basta — quem a exige é “medo”, não “ter”. A d) falha no teste do relativo: o “que” não retoma “medo” (não cabe “o qual”).</p></div></details></div>
+
+<h3 id="teste-p4">Parte 4 · Discursivas <span class="tag ex">Questões criadas</span></h3>
+<div class="q-item"><p class="q"><span class="qn">1.</span>Explique a diferença de sentido: (a) “Meu irmão que mora em Campinas vem amanhã.” (b) “Meu irmão, que mora em Campinas, vem amanhã.”</p>
+  <div class="space"></div><div class="space"></div>
+  <details class="qa"><summary>Ver resposta-modelo</summary><div class="ans-body"><p>Em (a), sem vírgulas, a oração é restritiva: especifica de qual irmão se fala, o que pressupõe que a pessoa tem mais de um irmão. Em (b), com vírgulas, é explicativa: fala-se de um irmão já identificado (a pessoa tem um só), e o fato de ele morar em Campinas é apenas uma informação a mais.</p></div></details></div>
+<div class="q-item"><p class="q"><span class="qn">2.</span>Reescreva alterando o sentido apenas com vírgulas e explique a mudança: “Os funcionários que chegaram atrasados foram advertidos.”</p>
+  <div class="space"></div><div class="space"></div>
+  <details class="qa"><summary>Ver resposta-modelo</summary><div class="ans-body"><p>“Os funcionários, que chegaram atrasados, foram advertidos.” Antes (restritiva), só os funcionários que chegaram atrasados foram advertidos — havia outros, pontuais, que não foram. Depois (explicativa), todos os funcionários chegaram atrasados, e todos foram advertidos.</p></div></details></div>
+
+<h3 id="teste-p5">Parte 5 · Desafio de vestibular <span class="tag ex">Questão criada</span></h3>
+<div class="q-item"><p class="q">“Todos os carros que são elétricos dispensam gasolina.” Considere: I. Pode-se afirmar que todos os carros dispensam gasolina. II. Pode-se afirmar que há carros que não são elétricos. III. Inserir vírgulas antes e depois de “que são elétricos” não altera o sentido. Está correto apenas o que se afirma em:</p>
+  <ol class="opts"><li>a) I.</li><li>b) II.</li><li>c) III.</li><li>d) I e II.</li><li>e) II e III.</li></ol>
+  <details class="qa"><summary>Ver resposta</summary><div class="ans-body"><p><b>b.</b> I está errada: a restritiva limita a afirmação aos carros elétricos. II está certa: é o pressuposto da restritiva (+1). III está errada: com vírgulas, a frase passaria a afirmar que todos os carros são elétricos. É a mesma lógica da questão 13 da apostila, sem a complicação da Física.</p></div></details></div>
+</section>
+
+<section id="kit-folha">
+<h2><span class="secnum">K8</span>Para completar a sua folha</h2>
+<p>A página de adjetivas tem duas linhas em branco em “Tipos de adjetivas”. Uma versão que cabe nelas:</p>
+<div class="callout def">
+  <span class="tag def">Tipos de adjetivas</span>
+  <p><b>Restritiva:</b> restringe o antecedente a uma parte do grupo; sem vírgulas; indispensável ao sentido; pressupõe outros elementos (+1).</p>
+  <p><b>Explicativa:</b> acrescenta informação que vale para todo o antecedente (generaliza); entre vírgulas; pode ser retirada sem mudar a referência (1, individual).</p>
+</div>
+</section>
+</div>
+
+<footer class="fontes" id="fontes">
+  <h2>Fontes consultadas</h2>
+  <ul>
+    <li><b>Material-base:</b> apostila de Gramática “Orações subordinadas” (Período composto, 2ª série), nas 8 fotos enviadas, com as anotações à mão.</li>
+    <li>SILVA, Luiz Oscar Novaes Nepomuceno da. <i>As orações subordinadas não classificadas pela NGB: agente da passiva – modal – locativa</i>. Dissertação de mestrado, Instituto de Letras da UERJ. Sustenta a observação de que a NGB não prevê a oração com função de agente da passiva. <a href="https://www.bdtd.uerj.br:8443/bitstream/1/6576/1/Luiz%20Oscar_Dissertacao.pdf" target="_blank" rel="noopener">Abrir o PDF</a></li>
+    <li>Artigo sobre o tratamento do pronome relativo nas gramáticas tradicionais, publicado na revista <i>Alfa</i> (Unesp). Registra o rótulo “pronome relativo indefinido” para o “quem” sem antecedente (com referência a Bechara e a Cunha e Cintra) e a ideia de antecedente subentendido. <a href="https://periodicos.fclar.unesp.br/alfa/article/download/3864/3557/9480" target="_blank" rel="noopener">Abrir o artigo</a></li>
+    <li>South African History Online — página sobre o Parlamento na Cidade do Cabo: as três capitais como acordo firmado na formação da União Sul-Africana, em 1910. <a href="https://www.sahistory.org.za/place/house-parliament-cape-town" target="_blank" rel="noopener">Abrir a página</a></li>
+    <li>Vídeos: páginas do YouTube conferidas em 22/10/2026 (links na <a href="#videos">seção 8</a>).</li>
+  </ul>
+  <p class="muted">Frases e questões marcadas como “criadas” foram elaboradas para esta aula e não são questões oficiais. A análise das frases a)–pp) foi feita com os critérios desta aula, pois a apostila não traz gabarito para essa lista.</p>
+</footer>
+</main>
+</div>
+
+<a class="to-top" href="#topo">↑ Topo</a>
+
+<script>
+(function () {
+  var d = document, root = d.documentElement;
+
+  /* Progresso de leitura e realce da seção atual no sumário */
+  var bar = d.querySelector('.progress');
+  var sidebar = d.querySelector('.sidebar');
+  var links = Array.prototype.slice.call(d.querySelectorAll('.toc a[href^="#"]'));
+  var targets = [];
+  links.forEach(function (a) {
+    var el = d.getElementById(a.getAttribute('href').slice(1));
+    if (el) targets.push({ el: el, a: a });
+  });
+  targets.sort(function (x, y) {
+    return (x.el.compareDocumentPosition(y.el) & Node.DOCUMENT_POSITION_FOLLOWING) ? -1 : 1;
+  });
+  var current = null, ticking = false;
+  function update() {
+    ticking = false;
+    var y = window.pageYOffset || root.scrollTop;
+    var h = root.scrollHeight - root.clientHeight;
+    var p = h > 0 ? y / h : 0;
+    if (bar) bar.style.transform = 'scaleX(' + Math.min(1, Math.max(0, p)) + ')';
+    var found = null;
+    for (var i = 0; i < targets.length; i++) {
+      if (targets[i].el.getBoundingClientRect().top <= 120) found = targets[i]; else break;
+    }
+    if (found !== current) {
+      if (current) { current.a.classList.remove('active'); current.a.removeAttribute('aria-current'); }
+      current = found;
+      if (current) {
+        current.a.classList.add('active');
+        current.a.setAttribute('aria-current', 'location');
+        if (sidebar && window.innerWidth > 1000) {
+          var r = current.a.getBoundingClientRect(), s = sidebar.getBoundingClientRect();
+          if (r.top < s.top + 40 || r.bottom > s.bottom - 40) sidebar.scrollTop += (r.top - s.top) - s.height / 3;
+        }
+      }
+    }
+  }
+  function onScroll() { if (!ticking) { ticking = true; window.requestAnimationFrame(update); } }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  update();
+
+  /* Sumário no celular */
+  var btn = d.querySelector('.toc-btn'), scrim = d.querySelector('.scrim');
+  function setOpen(open) {
+    if (!sidebar) return;
+    sidebar.classList.toggle('open', open);
+    if (scrim) scrim.classList.toggle('show', open);
+    if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  if (btn) btn.addEventListener('click', function () { setOpen(!sidebar.classList.contains('open')); });
+  if (scrim) scrim.addEventListener('click', function () { setOpen(false); });
+  links.forEach(function (a) { a.addEventListener('click', function () { if (window.innerWidth <= 1000) setOpen(false); }); });
+  d.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+
+  /* Modo treino da tabela das 42 frases */
+  Array.prototype.forEach.call(d.querySelectorAll('[data-treino]'), function (b) {
+    var box = d.getElementById(b.getAttribute('data-treino'));
+    if (!box) return;
+    var rows = box.querySelectorAll('tbody tr');
+    b.addEventListener('click', function () {
+      var on = !box.classList.contains('treino');
+      box.classList.toggle('treino', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      b.textContent = on ? 'Mostrar todas as respostas' : 'Modo treino: esconder respostas';
+      Array.prototype.forEach.call(rows, function (r) {
+        r.classList.remove('show');
+        if (on) r.setAttribute('tabindex', '0'); else r.removeAttribute('tabindex');
+      });
+    });
+    function reveal(tr) { if (tr && box.classList.contains('treino')) tr.classList.toggle('show'); }
+    box.addEventListener('click', function (e) { reveal(e.target.closest ? e.target.closest('tbody tr') : null); });
+    box.addEventListener('keydown', function (e) {
+      if ((e.key === 'Enter' || e.key === ' ') && e.target.matches && e.target.matches('tbody tr')) { e.preventDefault(); reveal(e.target); }
+    });
+  });
+
+  /* Impressão: abre todos os gabaritos */
+  var opened = [], trained = [];
+  window.addEventListener('beforeprint', function () {
+    Array.prototype.forEach.call(d.querySelectorAll('details:not([open])'), function (x) { x.setAttribute('open', ''); opened.push(x); });
+    Array.prototype.forEach.call(d.querySelectorAll('.treino'), function (x) { x.classList.remove('treino'); trained.push(x); });
+  });
+  window.addEventListener('afterprint', function () {
+    opened.forEach(function (x) { x.removeAttribute('open'); });
+    trained.forEach(function (x) { x.classList.add('treino'); });
+    opened = []; trained = [];
+  });
+})();
+</script>
+</body>
+</html>
